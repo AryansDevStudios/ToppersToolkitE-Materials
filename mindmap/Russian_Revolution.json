@@ -1,0 +1,471 @@
+{
+  "id": 1,
+  "label": "Russian Revolution & Socialist Transformations",
+  "children": [
+    {
+      "id": 2,
+      "label": "The Age of Social Change",
+      "children": [
+        {
+          "id": 3,
+          "label": "French Revolution Impact",
+          "children": [
+            { "id": 4, "label": "Ideas of freedom and equality", "children": [] },
+            { "id": 5, "label": "Possibility of societal change", "children": [] },
+            { "id": 6, "label": "Influence in Europe and Asia (e.g., Raja Rammohan Roy)", "children": [] }
+          ]
+        },
+        { "id": 7, "label": "Societal Divisions in Europe", "children": [] },
+        {
+          "id": 8,
+          "label": "Industrial Society & Social Change",
+          "children": [
+            { "id": 9, "label": "New cities, industrialised regions, railways, Industrial Revolution", "children": [] },
+            { "id": 10, "label": "Impact of Industrialisation", "children": [] },
+            {
+              "id": 11,
+              "label": "Liberals & Radicals' Role",
+              "children": [
+                { "id": 12, "label": "Searched for solutions", "children": [] },
+                { "id": 13, "label": "Often property owners/employers", "children": [] },
+                { "id": 14, "label": "Believed in individual effort, labour, enterprise", "children": [] },
+                { "id": 15, "label": "Rallied working class for change", "children": [] }
+              ]
+            },
+            {
+              "id": 16,
+              "label": "Revolutionaries (Nationalists, Liberals, Radicals)",
+              "children": [
+                { "id": 17, "label": "Wanted to end 1815 European governments", "children": [] },
+                { "id": 18, "label": "Overthrow monarchs (France, Italy, Germany, Russia)", "children": [] },
+                { "id": 19, "label": "Create 'nations' with equal rights (e.g., Giuseppe Mazzini)", "children": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "The Coming of Socialism to Europe",
+      "children": [
+        { "id": 21, "label": "Far-reaching vision of societal structure", "children": [] },
+        {
+          "id": 22,
+          "label": "Socialist Principles",
+          "children": [
+            { "id": 23, "label": "Against private property (root of social ills)", "children": [] },
+            { "id": 24, "label": "Collective control of property for social interests", "children": [] },
+            { "id": 25, "label": "Campaign for change", "children": [] }
+          ]
+        },
+        {
+          "id": 26,
+          "label": "Visions of the Future",
+          "children": [
+            {
+              "id": 27,
+              "label": "Cooperative Idea",
+              "children": [
+                { "id": 28, "label": "Robert Owen (New Harmony, USA)", "children": [] },
+                { "id": 29, "label": "Louis Blanc (Government encouragement of cooperatives)", "children": [] }
+              ]
+            },
+            {
+              "id": 30,
+              "label": "Marxist Socialism/Communism",
+              "children": [
+                { "id": 31, "label": "Karl Marx & Friedrich Engels (Communist Manifesto)", "children": [] },
+                { "id": 32, "label": "Industrial society is capitalist", "children": [] },
+                { "id": 33, "label": "Capitalists profit from workers", "children": [] },
+                { "id": 34, "label": "Workers must overthrow capitalism and private property", "children": [] },
+                { "id": 35, "label": "Radically socialist society (socially controlled property)", "children": [] },
+                { "id": 36, "label": "Communist society (natural society of future)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "label": "Support for Socialism",
+          "children": [
+            { "id": 38, "label": "Spread throughout Europe by 1870s", "children": [] },
+            { "id": 39, "label": "Formation of Second International (1889)", "children": [] },
+            { "id": 40, "label": "Worker associations (England, Germany) for rights", "children": [] },
+            { "id": 41, "label": "Social Democratic Party (Germany) winning seats", "children": [] },
+            { "id": 42, "label": "Labour Party (Britain, 1905), Socialist Party (France, 1905)", "children": [] },
+            { "id": 43, "label": "No socialist government in Europe until 1914", "children": [] },
+            { "id": 44, "label": "Paris Commune of 1871 (workers' red flag, 'Marseillaise')", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "label": "The Russian Revolution",
+      "children": [
+        { "id": 46, "label": "Socialists took over government in October Revolution 1917", "children": [] },
+        { "id": 47, "label": "Fall of monarchy in February 1917", "children": [] },
+        {
+          "id": 48,
+          "label": "Russian Empire in 1914",
+          "children": [
+            { "id": 49, "label": "Ruled by Tsar Nicholas II", "children": [] },
+            { "id": 50, "label": "Vast territory (Finland, Latvia, Poland, Central Asia, etc.)", "children": [] },
+            { "id": 51, "label": "Majority Russian Orthodox, also Catholics, Protestants, Muslims, Buddhists", "children": [] }
+          ]
+        },
+        {
+          "id": 52,
+          "label": "Economy and Society (Pre-1917)",
+          "children": [
+            { "id": 53, "label": "Majority agriculturists (85%)", "children": [] },
+            { "id": 54, "label": "Russia as major grain exporter", "children": [] },
+            {
+              "id": 55,
+              "label": "Industry",
+              "children": [
+                { "id": 56, "label": "Found in pockets (St Petersburg, Moscow)", "children": [] },
+                { "id": 57, "label": "Craftsmen and large factories", "children": [] },
+                { "id": 58, "label": "Growth in 1890s (railways, foreign investment)", "children": [] },
+                { "id": 59, "label": "Most industry private property", "children": [] }
+              ]
+            },
+            {
+              "id": 60,
+              "label": "Workers' Conditions",
+              "children": [
+                { "id": 61, "label": "Long hours, poor wages (craftsmen 15h, factories 10-12h)", "children": [] },
+                { "id": 62, "label": "Accommodation in rooms/dormitories", "children": [] },
+                { "id": 63, "label": "Divided social group (village links vs. permanent city dwellers)", "children": [] },
+                { "id": 64, "label": "Divided by skill (metalworkers 'aristocrats')", "children": [] },
+                { "id": 65, "label": "Women 31% of factory labour, paid less", "children": [] },
+                { "id": 66, "label": "Associations for aid, but few", "children": [] },
+                { "id": 67, "label": "Strikes frequent (textile 1896-97, metal 1902)", "children": [] }
+              ]
+            },
+            {
+              "id": 68,
+              "label": "Peasant Conditions",
+              "children": [
+                { "id": 69, "label": "Cultivated most land, but nobility/crown/church owned large properties", "children": [] },
+                { "id": 70, "label": "Divided, deeply religious", "children": [] },
+                { "id": 71, "label": "No respect for nobility (unlike France)", "children": [] },
+                { "id": 72, "label": "Wanted noble land, refused rent, murdered landlords", "children": [] },
+                { "id": 73, "label": "Unique land pooling custom (mir/commune)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "label": "Socialism in Russia (Pre-1914)",
+          "children": [
+            { "id": 75, "label": "All political parties illegal", "children": [] },
+            {
+              "id": 76,
+              "label": "Russian Social Democratic Workers Party (1898)",
+              "children": [
+                { "id": 77, "label": "Founded by George Plekhanov (Marxist ideas)", "children": [] },
+                { "id": 78, "label": "Operated illegally, newspaper, mobilised workers, organised strikes", "children": [] }
+              ]
+            },
+            {
+              "id": 79,
+              "label": "Socialist Revolutionary Party (1900)",
+              "children": [
+                { "id": 80, "label": "Believed peasants (land division custom) were natural socialists", "children": [] },
+                { "id": 81, "label": "Struggled for peasant rights, demanded noble land transfer", "children": [] }
+              ]
+            },
+            {
+              "id": 82,
+              "label": "Disagreements on Peasants (Lenin)",
+              "children": [
+                { "id": 83, "label": "Peasants not united (poor, rich, labourers, capitalists)", "children": [] },
+                { "id": 84, "label": "Could not all be part of socialist movement", "children": [] }
+              ]
+            },
+            {
+              "id": 85,
+              "label": "Party Organisation Strategy",
+              "children": [
+                { "id": 86, "label": "Bolsheviks (Lenin): Disciplined, controlled membership in repressive society", "children": [] },
+                { "id": 87, "label": "Mensheviks (Alexander Kerensky/Martov, Plekhanov, Trotsky): Open to all", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 88,
+          "label": "1905 Revolution (Turbulent Time)",
+          "children": [
+            {
+              "id": 89,
+              "label": "Causes",
+              "children": [
+                { "id": 90, "label": "Poor conditions for workers (1904: prices rose, wages declined 20%)", "children": [] },
+                { "id": 91, "label": "Dismissal of 4 Assembly of Russian Workers members at Putilov Iron Works", "children": [] },
+                { "id": 92, "label": "Russo-Japanese War defeat (1904) - fatal blow to prestige, anti-Tsar feelings", "children": [] }
+              ]
+            },
+            {
+              "id": 93,
+              "label": "Events",
+              "children": [
+                { "id": 94, "label": "Strikes by 110,000+ workers in St Petersburg (8-hour day, higher wages, better conditions)", "children": [] },
+                { "id": 95, "label": "Bloody Sunday (Jan 9, 1905): Peaceful workers led by Father Gapon fired upon near Winter Palace (1000+ killed, 300 wounded)", "children": [] },
+                { "id": 96, "label": "Strikes, university closures, civil liberties demands", "children": [] },
+                { "id": 97, "label": "Union of Unions (lawyers, doctors, engineers) demanded constituent assembly", "children": [] }
+              ]
+            },
+            {
+              "id": 98,
+              "label": "Outcomes",
+              "children": [
+                { "id": 99, "label": "Tsar allowed elected consultative Parliament (Duma)", "children": [] },
+                { "id": 100, "label": "Brief existence of trade unions/factory committees (later illegal)", "children": [] },
+                { "id": 101, "label": "Tsar dismissed first two Dumas, packed third with conservatives", "children": [] },
+                { "id": 102, "label": "Birth of Soviets (council of workers' representatives) - instruments of political power", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "label": "First World War & Russian Empire (1914-1917)",
+          "children": [
+            { "id": 104, "label": "Central powers (Germany, Austria, Turkey) vs. Allied powers (France, Britain, Russia)", "children": [] },
+            {
+              "id": 105,
+              "label": "Impact on Russia",
+              "children": [
+                { "id": 106, "label": "Initially popular, but Tsar refused Duma consultation", "children": [] },
+                { "id": 107, "label": "Tsarina's German origins & poor advisors (Rasputin) made autocracy unpopular", "children": [] },
+                { "id": 108, "label": "Eastern front different (mobile battles, large casualties)", "children": [] },
+                { "id": 109, "label": "Armies lost badly (7 million casualties by 1917)", "children": [] },
+                { "id": 110, "label": "Retreating army destroyed crops/buildings (3 million refugees)", "children": [] },
+                { "id": 111, "label": "Discredited government and Tsar, soldiers unwilling to fight", "children": [] },
+                { "id": 112, "label": "Severe impact on industry (few, cut off by Baltic Sea, equipment disintegrated)", "children": [] },
+                { "id": 113, "label": "Railway lines broke down (1916), labour shortages, workshops shut", "children": [] },
+                { "id": 114, "label": "Grain to army, bread/flour scarce in cities, bread riots (winter 1916)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 115,
+          "label": "February Revolution in Petrograd (1917)",
+          "children": [
+            { "id": 116, "label": "Grim conditions in capital (Petrograd) - food shortages", "children": [] },
+            { "id": 117, "label": "Winter of 1917: very cold, frost, heavy snow", "children": [] },
+            { "id": 118, "label": "Parliamentarians opposed Tsar's desire to dissolve Duma", "children": [] },
+            {
+              "id": 119,
+              "label": "Key Events",
+              "children": [
+                { "id": 120, "label": "Feb 22 (Mar 7): Lockout at factory on right bank", "children": [] },
+                { "id": 121, "label": "Feb 23 (Mar 8): 50 factories strike in sympathy (International Women's Day)", "children": [] },
+                { "id": 122, "label": "Demonstrators to Nevskii Prospekt, government curfew", "children": [] },
+                { "id": 123, "label": "Feb 25 (Mar 10): Government suspended Duma, politicians spoke out", "children": [] },
+                { "id": 124, "label": "Feb 27 (Mar 12): Police Headquarters ransacked, slogans for bread, wages, hours, democracy", "children": [] },
+                { "id": 125, "label": "Cavalry refused to fire, regiments mutinied, joined striking workers", "children": [] },
+                { "id": 126, "label": "Soldiers and workers formed Petrograd Soviet in Duma building", "children": [] },
+                { "id": 127, "label": "Mar 1 (Mar 14): Delegation to Tsar, military advised abdication", "children": [] },
+                { "id": 128, "label": "Mar 2 (Mar 15): Tsar Nicholas II abdicated, end of Romanov dynasty", "children": [] }
+              ]
+            },
+            {
+              "id": 129,
+              "label": "Immediate Aftermath",
+              "children": [
+                { "id": 130, "label": "Provisional Government formed (Soviet and Duma leaders)", "children": [] },
+                { "id": 131, "label": "Russia's future by constituent assembly (universal adult suffrage)", "children": [] },
+                { "id": 132, "label": "Dual Power system (Provisional Government + Petrograd Soviet)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 133,
+          "label": "After February (April 1917 - October 1917)",
+          "children": [
+            { "id": 134, "label": "Provisional Government: Army officials, landowners, industrialists influential", "children": [] },
+            { "id": 135, "label": "Restrictions on public meetings/associations removed", "children": [] },
+            { "id": 136, "label": "Soviets set up everywhere", "children": [] },
+            {
+              "id": 137,
+              "label": "Lenin's Return & April Theses",
+              "children": [
+                { "id": 138, "label": "Returned from exile in April 1917", "children": [] },
+                { "id": 139, "label": "Time for Soviets to take power", "children": [] },
+                { "id": 140, "label": "Demands: War close, land to peasants, banks nationalised", "children": [] },
+                { "id": 141, "label": "Bolshevik Party rename to Communist Party", "children": [] }
+              ]
+            },
+            {
+              "id": 142,
+              "label": "Spreading Workers' Movement",
+              "children": [
+                { "id": 143, "label": "Factory committees questioned industrialist control", "children": [] },
+                { "id": 144, "label": "Trade unions grew, soldiers' committees formed", "children": [] },
+                { "id": 145, "label": "All Russian Congress of Soviets (June)", "children": [] }
+              ]
+            },
+            {
+              "id": 146,
+              "label": "Provisional Government Response",
+              "children": [
+                { "id": 147, "label": "Power reduced, Bolshevik influence grew", "children": [] },
+                { "id": 148, "label": "Resisted workers' control, arrested leaders", "children": [] },
+                { "id": 149, "label": "Repressed pro-Bolshevik demonstrations (July 1917)", "children": [] },
+                { "id": 150, "label": "Bolshevik leaders went into hiding", "children": [] }
+              ]
+            },
+            { "id": 151, "label": "Peasants seized land (July-September 1917) encouraged by Socialist Revolutionaries", "children": [] }
+          ]
+        },
+        {
+          "id": 152,
+          "label": "October Revolution (Bolshevik Revolution) 1917",
+          "children": [
+            { "id": 153, "label": "Conflict between Provisional Government & Bolsheviks grew", "children": [] },
+            { "id": 154, "label": "Lenin feared dictatorship, discussed uprising", "children": [] },
+            {
+              "id": 155,
+              "label": "Key Events",
+              "children": [
+                { "id": 156, "label": "Oct 16: Lenin persuaded Petrograd Soviet/Bolshevik Party to seize power", "children": [] },
+                { "id": 157, "label": "Military Revolutionary Committee (Leon Trotskii) appointed to organise", "children": [] },
+                { "id": 158, "label": "Oct 24: Uprising began", "children": [] },
+                { "id": 159, "label": "PM Kerenskii left city to summon troops", "children": [] },
+                { "id": 160, "label": "Pro-government troops seized Bolshevik newspaper buildings, guarded Winter Palace", "children": [] },
+                { "id": 161, "label": "MRC ordered supporters to seize government offices, arrest ministers", "children": [] },
+                { "id": 162, "label": "Ship Aurora shelled Winter Palace", "children": [] },
+                { "id": 163, "label": "City under committee control, ministers surrendered", "children": [] },
+                { "id": 164, "label": "All-Russian Congress of Soviets approved Bolshevik action", "children": [] }
+              ]
+            },
+            { "id": 165, "label": "Heavy fighting in other cities (especially Moscow), Bolsheviks controlled Moscow-Petrograd by December", "children": [] }
+          ]
+        },
+        {
+          "id": 166,
+          "label": "What Changed After October?",
+          "children": [
+            { "id": 167, "label": "Bolsheviks opposed private property", "children": [] },
+            { "id": 168, "label": "Nationalisation of industry and banks (Nov 1917)", "children": [] },
+            { "id": 169, "label": "Land declared social property, peasants seized noble land", "children": [] },
+            { "id": 170, "label": "Partition of large houses in cities", "children": [] },
+            { "id": 171, "label": "Banned old aristocracy titles, new uniforms (budeonovka)", "children": [] },
+            { "id": 172, "label": "Bolshevik Party renamed Russian Communist Party (Bolshevik)", "children": [] },
+            { "id": 173, "label": "Failed to gain majority in Constituent Assembly elections (Nov 1917)", "children": [] },
+            { "id": 174, "label": "Lenin dismissed Assembly (Jan 1918) - All Russian Congress of Soviets seen as more democratic", "children": [] },
+            { "id": 175, "label": "Peace with Germany at Brest Litovsk (March 1918)", "children": [] },
+            { "id": 176, "label": "Russia became one-party state (Bolsheviks only party in elections)", "children": [] },
+            { "id": 177, "label": "Trade unions under party control", "children": [] },
+            { "id": 178, "label": "Secret police (Cheka, OGPU, NKVD) punished critics", "children": [] },
+            { "id": 179, "label": "Experiments in arts/architecture, but censorship disillusioned many", "children": [] }
+          ]
+        },
+        {
+          "id": 180,
+          "label": "Civil War (1918-1920)",
+          "children": [
+            { "id": 181, "label": "Land redistribution led to army breakup (peasants deserted for land)", "children": [] },
+            { "id": 182, "label": "Non-Bolshevik socialists, liberals, pro-Tsarists ('greens' & 'whites') condemned uprising", "children": [] },
+            { "id": 183, "label": "Leaders moved to south Russia, organised troops against Bolsheviks ('reds')", "children": [] },
+            { "id": 184, "label": "Backed by France, America, Britain, Japan (worried about socialism)", "children": [] },
+            { "id": 185, "label": "Looting, banditry, famine became common", "children": [] },
+            { "id": 186, "label": "'Whites' took harsh steps with peasants, lost popular support", "children": [] },
+            { "id": 187, "label": "By Jan 1920, Bolsheviks controlled most of former Russian empire", "children": [] },
+            { "id": 188, "label": "Cooperation with non-Russian nationalities and Muslim jadidists", "children": [] },
+            { "id": 189, "label": "Creation of Soviet Union (USSR) in Dec 1922", "children": [] },
+            { "id": 190, "label": "Political autonomy for non-Russian nationalities, but unpopular policies (e.g., discouragement of nomadism)", "children": [] }
+          ]
+        },
+        {
+          "id": 191,
+          "label": "Making a Socialist Society",
+          "children": [
+            { "id": 192, "label": "Industries and banks nationalised during Civil War", "children": [] },
+            { "id": 193, "label": "Peasants cultivated socialised land", "children": [] },
+            { "id": 194, "label": "Bolsheviks used confiscated land for collective work demonstration", "children": [] },
+            {
+              "id": 195,
+              "label": "Centralised Planning (Five-Year Plans)",
+              "children": [
+                { "id": 196, "label": "Officials assessed economy, set 5-year targets", "children": [] },
+                { "id": 197, "label": "Government fixed prices to promote industrial growth (1927-32, 1933-38)", "children": [] },
+                { "id": 198, "label": "Economic growth: oil, coal, steel production increased 100% (1929-33)", "children": [] },
+                { "id": 199, "label": "New factory cities (e.g., Magnitogorsk)", "children": [] },
+                { "id": 200, "label": "Poor working conditions (550 stoppages in Magnitogorsk first year)", "children": [] },
+                { "id": 201, "label": "Extended schooling, university access for workers/peasants", "children": [] },
+                { "id": 202, "label": "Creches in factories for women workers' children", "children": [] },
+                { "id": 203, "label": "Cheap public healthcare, model living quarters (uneven due to limited resources)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 204,
+          "label": "Stalinism and Collectivisation",
+          "children": [
+            { "id": 205, "label": "Lenin died Jan 1924, Joseph Stalin took power", "children": [] },
+            { "id": 206, "label": "1927-28: Acute grain shortages in towns", "children": [] },
+            { "id": 207, "label": "Government fixed grain prices, peasants refused to sell", "children": [] },
+            { "id": 208, "label": "Stalin's belief: Rich peasants (kulaks) holding stocks for higher prices", "children": [] },
+            { "id": 209, "label": "1928: Party members enforced grain collections, raided kulaks", "children": [] },
+            { "id": 210, "label": "Decision to collectivise farms due to small holdings, inability to modernise", "children": [] },
+            { "id": 211, "label": "Eliminate kulaks, take land, establish state-controlled large farms", "children": [] },
+            {
+              "id": 212,
+              "label": "Collectivisation Programme (from 1929)",
+              "children": [
+                { "id": 213, "label": "Peasants forced to cultivate in collective farms (kolkhoz)", "children": [] },
+                { "id": 214, "label": "Land/implements transferred to collective ownership, profits shared", "children": [] },
+                { "id": 215, "label": "Enraged peasants resisted, destroyed livestock (cattle fell 1/3, 1929-31)", "children": [] },
+                { "id": 216, "label": "Resisters severely punished (deported, exiled)", "children": [] },
+                { "id": 217, "label": "Allowed some independent cultivation but treated unsympathetically", "children": [] },
+                { "id": 218, "label": "Did not increase production immediately", "children": [] },
+                { "id": 219, "label": "Bad harvests (1930-33) led to devastating famine (over 4 million died)", "children": [] },
+                { "id": 220, "label": "Party critics (industrial production, collectivisation) charged with conspiracy", "children": [] },
+                { "id": 221, "label": "By 1939: 2 million in prisons/labour camps, false confessions under torture, executions of talented professionals", "children": [] },
+                { "id": 222, "label": "Great Purge: Millions arrested/murdered, villages burnt, villagers killed/evicted", "children": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "label": "Global Influence of Russian Revolution and USSR",
+      "children": [
+        { "id": 224, "label": "Promotion of Socialism and Communism worldwide", "children": [] },
+        { "id": 225, "label": "Formation of Communist parties in most countries (e.g., Great Britain, India)", "children": [] },
+        { "id": 226, "label": "Communist governments established (Poland, East Germany, Czechoslovakia, Bulgaria, China)", "children": [] },
+        { "id": 227, "label": "Bolsheviks encouraged colonial peoples", "children": [] },
+        { "id": 228, "label": "Comintern (international union of pro-Bolshevik socialist parties) 1919", "children": [] },
+        { "id": 229, "label": "Communist University of Workers of the East (USSR)", "children": [] },
+        { "id": 230, "label": "Redefinition of Democracy: Political democracy meaningless without social/economic equality", "children": [] },
+        { "id": 231, "label": "Rights of Workers: United workers globally, enhanced prestige", "children": [] },
+        { "id": 232, "label": "Rise of Nationalism: Weakened imperialism, inspired Asian/African peoples", "children": [] },
+        { "id": 233, "label": "Encouraged struggle between Capitalists and Workers", "children": [] },
+        { "id": 234, "label": "Division of World and Cold War: Two blocs (socialist vs. capitalist)", "children": [] },
+        {
+          "id": 235,
+          "label": "Criticisms & Realities",
+          "children": [
+            { "id": 236, "label": "Existing socialist parties didn't wholly approve Bolshevik methods", "children": [] },
+            { "id": 237, "label": "By 1950s, USSR government style not aligned with revolutionary ideals", "children": [] },
+            { "id": 238, "label": "Developed into great power, industry/agriculture grew, poor fed", "children": [] },
+            { "id": 239, "label": "Denied essential freedoms, used repressive policies", "children": [] },
+            { "id": 240, "label": "International reputation declined by late 20th century", "children": [] },
+            { "id": 241, "label": "Socialist ideals still respected, rethought in different ways", "children": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

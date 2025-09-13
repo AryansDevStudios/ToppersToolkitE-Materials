@@ -1,0 +1,330 @@
+{
+  "id": 1,
+  "label": "The French Revolution",
+  "children": [
+    {
+      "id": 2,
+      "label": "Key Events",
+      "children": [
+        { "id": 3, "label": "Storming of the Bastille (July 14, 1789)", "children": [] },
+        { "id": 4, "label": "Peasant Revolts in Countryside", "children": [] },
+        { "id": 5, "label": "Tennis Court Oath (June 20, 1789)", "children": [] },
+        { "id": 6, "label": "Formation of National Assembly", "children": [] },
+        { "id": 7, "label": "Abolition of Feudal System (Aug 4, 1789)", "children": [] },
+        { "id": 8, "label": "Execution of Louis XVI (Jan 21, 1793)", "children": [] },
+        { "id": 9, "label": "Reign of Terror (1793-1794)", "children": [] },
+        { "id": 10, "label": "Overthrow of Jacobin Republic", "children": [] },
+        { "id": 11, "label": "Rise of Napoleon Bonaparte (1804)", "children": [] }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Causes of Revolution",
+      "children": [
+        {
+          "id": 13,
+          "label": "Wars and Economic Crisis",
+          "children": [
+            { "id": 14, "label": "Empty Treasury (Louis XVI)", "children": [] },
+            { "id": 15, "label": "Seven Years War (1756-1763)", "children": [] },
+            { "id": 16, "label": "Revolutionary War in America", "children": [] },
+            { "id": 17, "label": "Increased Debt (livres)", "children": [] }
+          ]
+        },
+        {
+          "id": 18,
+          "label": "Excessive Taxation",
+          "children": [
+            { "id": 19, "label": "Unjust System", "children": [] },
+            { "id": 20, "label": "Upper Class Exempted (Nobles, Clergy)", "children": [] },
+            { "id": 21, "label": "Burden on Common People", "children": [] },
+            { "id": 22, "label": "Types of Taxes (Taille, Tithes, Land, Road, Salt, Toll, Tariff)", "children": [] }
+          ]
+        },
+        {
+          "id": 23,
+          "label": "Social Disparity (Three Estates)",
+          "children": [
+            {
+              "id": 24,
+              "label": "First Estate (Clergy)",
+              "children": [
+                { "id": 25, "label": "No Taxes", "children": [] },
+                { "id": 26, "label": "Privileges", "children": [] },
+                { "id": 27, "label": "Minority Group", "children": [] }
+              ]
+            },
+            {
+              "id": 28,
+              "label": "Second Estate (Nobility)",
+              "children": [
+                { "id": 29, "label": "Shared Privileges", "children": [] },
+                { "id": 30, "label": "No Taxes", "children": [] },
+                { "id": 31, "label": "Minority Group", "children": [] },
+                { "id": 32, "label": "Controlled Political/Economic System", "children": [] },
+                { "id": 33, "label": "Owned 2/5 Land", "children": [] }
+              ]
+            },
+            {
+              "id": 34,
+              "label": "Third Estate (Common Masses)",
+              "children": [
+                { "id": 35, "label": "Landless Peasants, Artisans, Merchants, etc.", "children": [] },
+                { "id": 36, "label": "Paid All Taxes", "children": [] },
+                { "id": 37, "label": "Lived in Poverty/Misery", "children": [] },
+                { "id": 38, "label": "Denied Political Rights", "children": [] },
+                { "id": 39, "label": "Majority Group (98%)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "label": "Rise of Middle Class",
+          "children": [
+            { "id": 41, "label": "Businessmen, Traders, Scholars, Lawyers", "children": [] },
+            { "id": 42, "label": "Educated", "children": [] },
+            { "id": 43, "label": "Believed No Privilege by Birth", "children": [] },
+            { "id": 44, "label": "Leaders of Revolution", "children": [] },
+            { "id": 45, "label": "Slogan: Liberty, Equality, Fraternity", "children": [] },
+            { "id": 46, "label": "Determined to End Feudal System", "children": [] }
+          ]
+        },
+        {
+          "id": 47,
+          "label": "Struggle to Survive (Subsistence Crisis)",
+          "children": [
+            { "id": 48, "label": "Population Increase (23m to 28m)", "children": [] },
+            { "id": 49, "label": "Increased Demand for Foodgrains", "children": [] },
+            { "id": 50, "label": "Low Production", "children": [] },
+            { "id": 51, "label": "Rising Price of Bread", "children": [] },
+            { "id": 52, "label": "Fixed Wages", "children": [] },
+            { "id": 53, "label": "Widening Rich-Poor Gap", "children": [] },
+            { "id": 54, "label": "Drought/Hail Effects", "children": [] }
+          ]
+        },
+        {
+          "id": 55,
+          "label": "Influence of Philosophers/Writers",
+          "children": [
+            { "id": 56, "label": "Exposed Evils in System", "children": [] },
+            { "id": 57, "label": "Infused Liberty, Equality, Fraternity", "children": [] },
+            {
+              "id": 58,
+              "label": "Montesquieu (Spirit of Laws)",
+              "children": [
+                { "id": 59, "label": "Criticized Autocracy", "children": [] },
+                { "id": 60, "label": "Praised Democratic Republic", "children": [] }
+              ]
+            },
+            {
+              "id": 61,
+              "label": "Voltaire",
+              "children": [
+                { "id": 62, "label": "Focus on Material Life", "children": [] },
+                { "id": 63, "label": "Condemned Church", "children": [] }
+              ]
+            },
+            {
+              "id": 64,
+              "label": "Rousseau (Social Contract)",
+              "children": [
+                { "id": 65, "label": "Man born free, everywhere in chains", "children": [] },
+                { "id": 66, "label": "Government is Social Contract", "children": [] },
+                { "id": 67, "label": "Right to Revolt against Tyranny", "children": [] }
+              ]
+            },
+            {
+              "id": 68,
+              "label": "John Locke (Two Treatises of Government)",
+              "children": [
+                { "id": 69, "label": "Refuted Divine/Absolute Right of Monarch", "children": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "label": "Outbreak of Revolution",
+      "children": [
+        { "id": 71, "label": "Estates General Convocation (May 5, 1789)", "children": [] },
+        { "id": 72, "label": "Voting Dispute (One Estate, One Vote vs. One Member, One Vote)", "children": [] },
+        { "id": 73, "label": "Third Estate Walkout", "children": [] },
+        { "id": 74, "label": "Tennis Court Oath (National Assembly formation)", "children": [] },
+        { "id": 75, "label": "Rioting in Paris and Countryside", "children": [] },
+        { "id": 76, "label": "Fall of Bastille (Symbol of Despotic Power)", "children": [] }
+      ]
+    },
+    {
+      "id": 77,
+      "label": "Political Developments",
+      "children": [
+        {
+          "id": 78,
+          "label": "Declaration of Rights of Man and Citizen",
+          "children": [
+            { "id": 79, "label": "Men Free and Equal in Rights", "children": [] },
+            { "id": 80, "label": "Natural/Inalienable Rights (Liberty, Property, Security, Resistance to Oppression)", "children": [] },
+            { "id": 81, "label": "Sovereignty in Nation", "children": [] },
+            { "id": 82, "label": "Law as General Will", "children": [] },
+            { "id": 83, "label": "Freedom of Speech, Writing, Print", "children": [] },
+            { "id": 84, "label": "Equal Taxation (Proportion to Means)", "children": [] },
+            { "id": 85, "label": "Property Sacred and Inviolable", "children": [] }
+          ]
+        },
+        {
+          "id": 86,
+          "label": "Constitution of 1791",
+          "children": [
+            { "id": 87, "label": "Limited Monarchy", "children": [] },
+            { "id": 88, "label": "Powers to National Assembly", "children": [] },
+            { "id": 89, "label": "Indirectly Elected", "children": [] },
+            { "id": 90, "label": "Active vs. Passive Citizens", "children": [] },
+            { "id": 91, "label": "Voting Rights (Men >25, Paid Taxes)", "children": [] }
+          ]
+        },
+        {
+          "id": 92,
+          "label": "France Becomes a Republic (1792)",
+          "children": [
+            { "id": 93, "label": "Secret Negotiations of Louis XVI with Prussia", "children": [] },
+            { "id": 94, "label": "War against Prussia and Austria", "children": [] },
+            { "id": 95, "label": "Jacobin Club (Radical Political Group)", "children": [] },
+            { "id": 96, "label": "Sans-culottes (Working People, Anti-Monarchy)", "children": [] },
+            { "id": 97, "label": "Storming of Tuileries Palace", "children": [] },
+            { "id": 98, "label": "Imprisonment of Royal Family", "children": [] },
+            { "id": 99, "label": "Universal Male Suffrage (21+)", "children": [] },
+            { "id": 100, "label": "National Convention (New Assembly)", "children": [] },
+            { "id": 101, "label": "Abolition of Monarchy (Sept 21, 1792)", "children": [] }
+          ]
+        },
+        {
+          "id": 102,
+          "label": "Reign of Terror (1793-1794)",
+          "children": [
+            { "id": 103, "label": "Maximilien Robespierre's Policy", "children": [] },
+            { "id": 104, "label": "Targeting 'Enemies of Republic'", "children": [] },
+            { "id": 105, "label": "Arrest, Imprisonment, Revolutionary Tribunal", "children": [] },
+            { "id": 106, "label": "Guillotine Executions", "children": [] },
+            { "id": 107, "label": "Wage and Price Ceilings", "children": [] },
+            { "id": 108, "label": "Rationing Meat and Bread", "children": [] },
+            { "id": 109, "label": "Forced Grain Transport/Sale", "children": [] },
+            { "id": 110, "label": "Paine d'egalite (Equality Bread)", "children": [] },
+            { "id": 111, "label": "Citoyen/Citoyenne (Citizen Address)", "children": [] },
+            { "id": 112, "label": "Churches Shut Down", "children": [] },
+            { "id": 113, "label": "Robespierre's Execution (July 28, 1794)", "children": [] }
+          ]
+        },
+        {
+          "id": 114,
+          "label": "Directory Rules France",
+          "children": [
+            { "id": 115, "label": "Wealthier Middle Classes Seize Power", "children": [] },
+            { "id": 116, "label": "New Constitution (Denied Vote to Non-Propertied)", "children": [] },
+            { "id": 117, "label": "Two Elected Legislative Councils", "children": [] },
+            { "id": 118, "label": "Five-Member Executive (Directory)", "children": [] },
+            { "id": 119, "label": "Safeguard against One-Man Rule", "children": [] },
+            { "id": 120, "label": "Political Instability (Clashes)", "children": [] },
+            { "id": 121, "label": "Paved Way for Napoleon", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "label": "Role of Women",
+      "children": [
+        {
+          "id": 123,
+          "label": "Before Revolution",
+          "children": [
+            { "id": 124, "label": "Worked for Living (Seamstresses, Laundresses, Vendors, Servants)", "children": [] },
+            { "id": 125, "label": "Limited Access to Education/Job Training", "children": [] },
+            { "id": 126, "label": "Managed Households (Cooking, Water, Bread, Children)", "children": [] },
+            { "id": 127, "label": "Lower Wages than Men", "children": [] }
+          ]
+        },
+        {
+          "id": 128,
+          "label": "During Revolution",
+          "children": [
+            { "id": 129, "label": "Active Participants", "children": [] },
+            { "id": 130, "label": "Formed Political Clubs/Newspapers (e.g., Society of Revolutionary and Republican Women)", "children": [] },
+            { "id": 131, "label": "Disappointed by 1791 Constitution (Passive Citizens)", "children": [] },
+            { "id": 132, "label": "Demanded Voting Rights, Assembly Election, Political Office", "children": [] }
+          ]
+        },
+        {
+          "id": 133,
+          "label": "Revolutionary Government Measures",
+          "children": [
+            { "id": 134, "label": "Compulsory Schooling for Girls", "children": [] },
+            { "id": 135, "label": "Marriage as Free Contract/Civil Law Registration", "children": [] },
+            { "id": 136, "label": "Divorce Legalized (by mutual consent)", "children": [] }
+          ]
+        },
+        {
+          "id": 137,
+          "label": "Challenges and Outcome",
+          "children": [
+            { "id": 138, "label": "Struggle for Equal Political Rights Continued", "children": [] },
+            { "id": 139, "label": "Closure of Women's Clubs/Banning Political Activities (Reign of Terror)", "children": [] },
+            { "id": 140, "label": "Arrests and Executions (Olympe de Gouges)", "children": [] },
+            { "id": 141, "label": "Right to Vote Won in 1946", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "label": "Effects and Legacy",
+      "children": [
+        { "id": 143, "label": "Abolition of Slavery (Jacobin Regime, Reintroduced by Napoleon, Finally 1848)", "children": [] },
+        { "id": 144, "label": "Ended Arbitrary/Despotic Monarchy", "children": [] },
+        { "id": 145, "label": "People as Source of Power", "children": [] },
+        {
+          "id": 146,
+          "label": "Great Ideals (Liberty, Equality, Fraternity)",
+          "children": [
+            { "id": 147, "label": "Transformed France", "children": [] },
+            { "id": 148, "label": "Spread to Europe and World", "children": [] },
+            { "id": 149, "label": "Inspired Revolutionary/Democratic Ideas", "children": [] }
+          ]
+        },
+        { "id": 150, "label": "Modern Meaning of 'Nation' (People, Common History, Oneness)", "children": [] },
+        { "id": 151, "label": "Sobering Effect on Monarchies (Care for Welfare)", "children": [] },
+        { "id": 152, "label": "Improved Trade", "children": [] },
+        { "id": 153, "label": "Freedom of Occupation", "children": [] },
+        { "id": 154, "label": "Removal of Censorship (Post-Declaration of Rights)", "children": [] },
+        { "id": 155, "label": "Inspiration for Colonized People (e.g., Tipu Sultan, Rammohan Roy)", "children": [] }
+      ]
+    },
+    {
+      "id": 156,
+      "label": "Rise of Napoleon Bonaparte",
+      "children": [
+        { "id": 157, "label": "Military Dictator", "children": [] },
+        { "id": 158, "label": "Defeated Mobs, Saved Directory", "children": [] },
+        { "id": 159, "label": "Commissioner-in-Chief of French Forces in Italy", "children": [] },
+        { "id": 160, "label": "Became Emperor of France (1804)", "children": [] },
+        {
+          "id": 161,
+          "label": "Achievements",
+          "children": [
+            { "id": 162, "label": "Modernized France (Industries)", "children": [] },
+            { "id": 163, "label": "Promoted Trade (Roads/Canals)", "children": [] },
+            { "id": 164, "label": "Introduced Laws (Private Property, Uniform Weights/Measures)", "children": [] },
+            { "id": 165, "label": "Conquered European Countries", "children": [] },
+            { "id": 166, "label": "Established Friendly Relation with Pope", "children": [] },
+            { "id": 167, "label": "New Constitution (Legislative/Executive Bodies)", "children": [] }
+          ]
+        },
+        { "id": 168, "label": "Viewed as Liberator, then Invading Force", "children": [] },
+        { "id": 169, "label": "Defeated at Waterloo (1815)", "children": [] },
+        { "id": 170, "label": "Ideas (Liberty, Modern Laws) Impacted Europe", "children": [] }
+      ]
+    }
+  ]
+}
