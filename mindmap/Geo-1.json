@@ -1,0 +1,315 @@
+{
+  "id": 1,
+  "label": "India: Location, Size, and Neighbors",
+  "children": [
+    {
+      "id": 2,
+      "label": "Introduction",
+      "children": [
+        { "id": 3, "label": "Motherland", "children": [] },
+        { "id": 4, "label": "Great physical and cultural diversity", "children": [] },
+        { "id": 5, "label": "Land of lofty mountains, mighty rivers", "children": [] },
+        { "id": 6, "label": "Plains and plateaus", "children": [] },
+        { "id": 7, "label": "Seventh largest country by area", "children": [] },
+        { "id": 8, "label": "Second largest country by population", "children": [] }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Location and Size",
+      "children": [
+        {
+          "id": 10,
+          "label": "Location",
+          "children": [
+            { "id": 11, "label": "Southern part of Asia", "children": [] },
+            { "id": 12, "label": "Head of Indian Ocean", "children": [] },
+            { "id": 13, "label": "Only country with ocean named after it", "children": [] },
+            { "id": 14, "label": "Central location for international trade", "children": [] },
+            { "id": 15, "label": "East: Indo-China peninsula", "children": [] },
+            { "id": 16, "label": "West: Arabia peninsula", "children": [] }
+          ]
+        },
+        {
+          "id": 17,
+          "label": "Size",
+          "children": [
+            { "id": 18, "label": "2.42% of world's land area", "children": [] },
+            { "id": 19, "label": "3.28 million sq. km area", "children": [] },
+            {
+              "id": 20,
+              "label": "Larger countries (7th largest)",
+              "children": [
+                { "id": 21, "label": "Russia", "children": [] },
+                { "id": 22, "label": "Canada", "children": [] },
+                { "id": 23, "label": "USA", "children": [] },
+                { "id": 24, "label": "China", "children": [] },
+                { "id": 25, "label": "Brazil", "children": [] },
+                { "id": 26, "label": "Australia", "children": [] }
+              ]
+            },
+            { "id": 27, "label": "North-South extent: ~3,214 km", "children": [] },
+            { "id": 28, "label": "East-West extent: ~2,933 km", "children": [] },
+            { "id": 29, "label": "Land boundary: ~15,200 km", "children": [] },
+            { "id": 30, "label": "Coastline length (incl. islands): ~7,516.6 km", "children": [] }
+          ]
+        },
+        {
+          "id": 31,
+          "label": "Latitude",
+          "children": [
+            { "id": 32, "label": "Entirely in Northern Hemisphere", "children": [] },
+            { "id": 33, "label": "8°4' N to 37°6' N latitude", "children": [] },
+            { "id": 34, "label": "Tropic of Cancer (23°30' N) divides India", "children": [] },
+            { "id": 35, "label": "South of 22° N tapers to Indian Ocean", "children": [] },
+            {
+              "id": 36,
+              "label": "Divides Indian Ocean",
+              "children": [
+                { "id": 37, "label": "Arabian Sea (west)", "children": [] },
+                { "id": 38, "label": "Bay of Bengal (east)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "label": "Longitude",
+          "children": [
+            { "id": 40, "label": "68°7' E to 97°25' E longitudes", "children": [] },
+            { "id": 41, "label": "Standard Meridian of India: 82°30' E", "children": [] },
+            { "id": 42, "label": "Passes through Mirzapur (UP)", "children": [] },
+            { "id": 43, "label": "Standard Time: local time for whole country", "children": [] },
+            { "id": 44, "label": "5 hours 30 minutes ahead of GMT", "children": [] },
+            { "id": 45, "label": "2-hour time difference between east and west", "children": [] },
+            { "id": 46, "label": "Avoids confusion from 30 local times", "children": [] },
+            { "id": 47, "label": "82°30' E is multiple of 7°30' E", "children": [] }
+          ]
+        },
+        {
+          "id": 48,
+          "label": "Boundaries",
+          "children": [
+            { "id": 49, "label": "Peninsula: water on three sides", "children": [] },
+            {
+              "id": 50,
+              "label": "Water bodies",
+              "children": [
+                { "id": 51, "label": "Indian Ocean (head)", "children": [] },
+                { "id": 52, "label": "Arabian Sea (west)", "children": [] },
+                { "id": 53, "label": "Bay of Bengal (east)", "children": [] }
+              ]
+            },
+            {
+              "id": 54,
+              "label": "Land neighbors",
+              "children": [
+                { "id": 55, "label": "Pakistan (NW)", "children": [] },
+                { "id": 56, "label": "Afghanistan (NW)", "children": [] },
+                { "id": 57, "label": "China (Tibet) (N)", "children": [] },
+                { "id": 58, "label": "Nepal (N)", "children": [] },
+                { "id": 59, "label": "Bhutan (N)", "children": [] },
+                { "id": 60, "label": "Myanmar (E)", "children": [] },
+                { "id": 61, "label": "Bangladesh (E)", "children": [] }
+              ]
+            },
+            {
+              "id": 62,
+              "label": "Island neighbors (South)",
+              "children": [
+                { "id": 63, "label": "Sri Lanka", "children": [] },
+                { "id": 64, "label": "Palk Strait & Gulf of Mannar separate", "children": [] },
+                { "id": 65, "label": "Maldives Islands (south of Lakshadweep)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "label": "Coastline",
+          "children": [
+            { "id": 67, "label": "Fairly regular coastline", "children": [] },
+            { "id": 68, "label": "Not many natural harbors", "children": [] },
+            { "id": 69, "label": "Gulf of Kutch (Gujarat)", "children": [] },
+            { "id": 70, "label": "Gulf of Khambhat (Gujarat)", "children": [] },
+            { "id": 71, "label": "Lake Chilka (Odisha, east coast)", "children": [] }
+          ]
+        },
+        {
+          "id": 72,
+          "label": "Islands",
+          "children": [
+            {
+              "id": 73,
+              "label": "Andaman & Nicobar Islands",
+              "children": [
+                { "id": 74, "label": "Bay of Bengal", "children": [] },
+                { "id": 75, "label": "Latitudes 8°N and 14°N", "children": [] },
+                { "id": 76, "label": "Many islands, some volcanic", "children": [] },
+                { "id": 77, "label": "Indira Point: southernmost point (submerged 2004 Tsunami)", "children": [] }
+              ]
+            },
+            {
+              "id": 78,
+              "label": "Lakshadweep Islands",
+              "children": [
+                { "id": 79, "label": "Smallest Union Territory by area", "children": [] }
+              ]
+            },
+            { "id": 80, "label": "Kanyakumari: southernmost tip of mainland (8°N of Equator)", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "label": "India and the World",
+      "children": [
+        {
+          "id": 82,
+          "label": "Strategic Location",
+          "children": [
+            { "id": 83, "label": "South-central part of Asian peninsula", "children": [] },
+            { "id": 84, "label": "Long coastline", "children": [] },
+            { "id": 85, "label": "Easy access to outside world (not landlocked)", "children": [] }
+          ]
+        },
+        {
+          "id": 86,
+          "label": "Northern Mountains",
+          "children": [
+            { "id": 87, "label": "Lofty mountains form barrier", "children": [] },
+            { "id": 88, "label": "Land communication via passes", "children": [] },
+            {
+              "id": 89,
+              "label": "Major passes",
+              "children": [
+                { "id": 90, "label": "Zojilla (J&K)", "children": [] },
+                { "id": 91, "label": "Shipki La (HP)", "children": [] },
+                { "id": 92, "label": "Nathu La (Sikkim)", "children": [] },
+                { "id": 93, "label": "Khyber, Malakand, Gomal (from Afghanistan)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "label": "Maritime Connections",
+          "children": [
+            { "id": 95, "label": "Central location in Indian Ocean", "children": [] },
+            {
+              "id": 96,
+              "label": "Sea routes to",
+              "children": [
+                { "id": 97, "label": "East Africa", "children": [] },
+                { "id": 98, "label": "West Asia", "children": [] },
+                { "id": 99, "label": "South & South-East Asia", "children": [] },
+                { "id": 100, "label": "East Asia", "children": [] }
+              ]
+            },
+            { "id": 101, "label": "Close cultural and commercial contacts", "children": [] },
+            { "id": 102, "label": "Suez Canal (1869): reduced Europe distance by 7,000 km", "children": [] },
+            { "id": 103, "label": "Favorable international trade highway", "children": [] },
+            {
+              "id": 104,
+              "label": "Connected via",
+              "children": [
+                { "id": 105, "label": "Cape of Good Hope", "children": [] },
+                { "id": 106, "label": "Suez Canal", "children": [] },
+                { "id": 107, "label": "Strait of Malacca (to Canada/USA)", "children": [] }
+              ]
+            },
+            { "id": 108, "label": "Major air routes pass through India", "children": [] }
+          ]
+        },
+        {
+          "id": 109,
+          "label": "Historical Exchanges",
+          "children": [
+            { "id": 110, "label": "Land routes older than maritime", "children": [] },
+            { "id": 111, "label": "Passes aided ancient travelers", "children": [] },
+            { "id": 112, "label": "Spread of pastoral nomadism", "children": [] },
+            {
+              "id": 113,
+              "label": "Indian contributions to world",
+              "children": [
+                { "id": 114, "label": "Upanishads, Ramayana ideas", "children": [] },
+                { "id": 115, "label": "Panchatantra stories", "children": [] },
+                { "id": 116, "label": "Numerals, decimal system", "children": [] },
+                { "id": 117, "label": "Spices, muslin, merchandise", "children": [] }
+              ]
+            },
+            {
+              "id": 118,
+              "label": "External influences on India",
+              "children": [
+                { "id": 119, "label": "Greek sculpture", "children": [] },
+                { "id": 120, "label": "Dome and minaret architectural styles (West Asia)", "children": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 121,
+          "label": "Internal Unity",
+          "children": [
+            { "id": 122, "label": "Diversities (mountains, rivers, plains, forests, coastline)", "children": [] },
+            { "id": 123, "label": "Helped unite society", "children": [] },
+            { "id": 124, "label": "Regions interdependent", "children": [] },
+            { "id": 125, "label": "National home market", "children": [] },
+            { "id": 126, "label": "Monsoons provide climatic uniformity", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "label": "Neighbors",
+      "children": [
+        {
+          "id": 128,
+          "label": "SAARC Countries",
+          "children": [
+            { "id": 129, "label": "India", "children": [] },
+            { "id": 130, "label": "Pakistan", "children": [] },
+            { "id": 131, "label": "Bangladesh", "children": [] },
+            { "id": 132, "label": "Bhutan", "children": [] },
+            { "id": 133, "label": "Nepal", "children": [] },
+            { "id": 134, "label": "Sri Lanka", "children": [] },
+            { "id": 135, "label": "Maldives", "children": [] },
+            { "id": 136, "label": "Afghanistan", "children": [] }
+          ]
+        },
+        { "id": 137, "label": "Afghanistan & Myanmar: extension of subcontinent", "children": [] },
+        { "id": 138, "label": "Southern island neighbors: Sri Lanka, Maldives", "children": [] },
+        { "id": 139, "label": "Palk Strait & Gulf of Mannar separate India from Sri Lanka", "children": [] },
+        { "id": 140, "label": "Maldives south of Lakshadweep", "children": [] },
+        { "id": 141, "label": "Indian subcontinent due to isolation (mountains/ocean) and factors", "children": [] },
+        { "id": 142, "label": "Bhutan: special relation with India (defense responsibility)", "children": [] },
+        {
+          "id": 143,
+          "label": "Close neighbors from Andaman & Nicobar",
+          "children": [
+            { "id": 144, "label": "Indonesia", "children": [] },
+            { "id": 145, "label": "Malaysia", "children": [] },
+            { "id": 146, "label": "Thailand", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "label": "Administrative Divisions",
+      "children": [
+        { "id": 148, "label": "Republic: Union of States", "children": [] },
+        { "id": 149, "label": "28 states", "children": [] },
+        { "id": 150, "label": "8 union territories", "children": [] },
+        { "id": 151, "label": "National Capital: Delhi", "children": [] },
+        { "id": 152, "label": "Largest state: Rajasthan", "children": [] },
+        { "id": 153, "label": "Smallest state: Goa", "children": [] },
+        { "id": 154, "label": "Largest UT: Ladakh", "children": [] },
+        { "id": 155, "label": "Smallest UT: Lakshadweep", "children": [] }
+      ]
+    }
+  ]
+}
