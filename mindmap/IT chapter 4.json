@@ -1,0 +1,336 @@
+{
+  "id": 1,
+  "label": "Basics of Writing Skills",
+  "children": [
+    {
+      "id": 2,
+      "label": "Importance of Writing",
+      "children": [
+        {
+          "id": 3,
+          "label": "Share ideas, feelings, information"
+        },
+        {
+          "id": 4,
+          "label": "Lasts longer (refer to later)"
+        },
+        {
+          "id": 5,
+          "label": "Significant in digital era"
+        },
+        {
+          "id": 6,
+          "label": "Express clearly and connect"
+        },
+        {
+          "id": 7,
+          "label": "Requires good command of language"
+        },
+        {
+          "id": 8,
+          "label": "Must be free from grammatical errors"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Sentences (Building Blocks)",
+      "children": [
+        {
+          "id": 10,
+          "label": "Definition: Group of words, complete sense/thought"
+        },
+        {
+          "id": 11,
+          "label": "Starts with Capital Letter"
+        },
+        {
+          "id": 12,
+          "label": "Ends with full stop, question mark, or exclamation mark"
+        },
+        {
+          "id": 13,
+          "label": "Parts of Sentence",
+          "children": [
+            {
+              "id": 14,
+              "label": "Subject: Who/what the sentence is about"
+            },
+            {
+              "id": 15,
+              "label": "Predicate: What is being said about the subject"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "label": "Sentence Structure",
+          "children": [
+            {
+              "id": 17,
+              "label": "Subject (Shows who/what)"
+            },
+            {
+              "id": 18,
+              "label": "Verb (Shows action)"
+            },
+            {
+              "id": 19,
+              "label": "Object (Receives action)"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "label": "Kinds of Sentences (Four)",
+          "children": [
+            {
+              "id": 21,
+              "label": "Assertive/Declarative (States facts, ends with .)"
+            },
+            {
+              "id": 22,
+              "label": "Imperative (Commands, requests, advice, ends with . or !)"
+            },
+            {
+              "id": 23,
+              "label": "Interrogative (Asks questions, ends with ?)"
+            },
+            {
+              "id": 24,
+              "label": "Exclamatory (Strong emotion/feeling, uses !)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "label": "Phrases",
+      "children": [
+        {
+          "id": 26,
+          "label": "Definition: Group of words, unit, not complete sense independently"
+        },
+        {
+          "id": 27,
+          "label": "Types of Phrases",
+          "children": [
+            {
+              "id": 28,
+              "label": "Noun Phrase (Works as a noun, main word + modifiers)"
+            },
+            {
+              "id": 29,
+              "label": "Verb Phrase (Forms a verb, main verb + helping verbs)"
+            },
+            {
+              "id": 30,
+              "label": "Adjective Phrase (Describes noun/pronoun)"
+            },
+            {
+              "id": 31,
+              "label": "Prepositional Phrase (Starts with preposition, ends with object)"
+            },
+            {
+              "id": 32,
+              "label": "Adverb Phrase (Modifies verb/adj/adverb, describes how/when/where)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "label": "Parts of Speech (8 Building Blocks)",
+      "children": [
+        {
+          "id": 34,
+          "label": "Nouns (Person, place, thing)"
+        },
+        {
+          "id": 35,
+          "label": "Pronouns (Used in place of noun, reduces repetition)"
+        },
+        {
+          "id": 36,
+          "label": "Verbs (Expresses an action)"
+        },
+        {
+          "id": 37,
+          "label": "Adjectives (Describes the noun)"
+        },
+        {
+          "id": 38,
+          "label": "Adverbs (Additional info about verb/adj/adverb, answers how/when/where)"
+        },
+        {
+          "id": 39,
+          "label": "Prepositions (Location, direction, time, relationship)"
+        },
+        {
+          "id": 40,
+          "label": "Conjunctions (Connects words/phrases/clauses)"
+        },
+        {
+          "id": 41,
+          "label": "Interjections (Expresses strong/sudden emotion/feeling)"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "Articles (a, an, the)",
+      "children": [
+        {
+          "id": 43,
+          "label": "Generally used before nouns"
+        },
+        {
+          "id": 44,
+          "label": "Types of Articles",
+          "children": [
+            {
+              "id": 45,
+              "label": "Indefinite Articles (a/an)",
+              "children": [
+                {
+                  "id": 46,
+                  "label": "General or non-specific way"
+                },
+                {
+                  "id": 47,
+                  "label": "Use 'a' before consonant sound"
+                },
+                {
+                  "id": 48,
+                  "label": "Use 'an' before vowel sound"
+                },
+                {
+                  "id": 49,
+                  "label": "Used with countable/singular nouns"
+                },
+                {
+                  "id": 50,
+                  "label": "Used for professions/nationalities (non-specific)"
+                },
+                {
+                  "id": 51,
+                  "label": "Used for first mention"
+                }
+              ]
+            },
+            {
+              "id": 52,
+              "label": "Definite Article (the)",
+              "children": [
+                {
+                  "id": 53,
+                  "label": "Specific thing (known to reader/listener)"
+                },
+                {
+                  "id": 54,
+                  "label": "Rule: Specificity (particular item)"
+                },
+                {
+                  "id": 55,
+                  "label": "Rule: Unique Objects (one of a kind)"
+                },
+                {
+                  "id": 56,
+                  "label": "Rule: Superlative Forms (the best, the tallest)"
+                },
+                {
+                  "id": 57,
+                  "label": "Rule: Ordinals (the first, the second)"
+                },
+                {
+                  "id": 58,
+                  "label": "Rule: Geographical Features (rivers, oceans)"
+                },
+                {
+                  "id": 59,
+                  "label": "Rule: Countries With Plural Names (The Netherlands)"
+                },
+                {
+                  "id": 60,
+                  "label": "Rule: Musical Instruments"
+                },
+                {
+                  "id": 61,
+                  "label": "Rule: Newspapers"
+                },
+                {
+                  "id": 62,
+                  "label": "Rule: Religious Books"
+                },
+                {
+                  "id": 63,
+                  "label": "Rule: Nationality as a Noun"
+                }
+              ]
+            },
+            {
+              "id": 64,
+              "label": "Zero Article Usage",
+              "children": [
+                {
+                  "id": 65,
+                  "label": "General meaning (pets in general)"
+                },
+                {
+                  "id": 66,
+                  "label": "Meals (breakfast, dinner)"
+                },
+                {
+                  "id": 67,
+                  "label": "Years, months, days"
+                },
+                {
+                  "id": 68,
+                  "label": "Languages, School subjects"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "label": "Paragraphs (Connecting Ideas)",
+      "children": [
+        {
+          "id": 70,
+          "label": "Definition: Group of interconnected sentences on a common topic"
+        },
+        {
+          "id": 71,
+          "label": "Requirement: One Idea at a Time"
+        },
+        {
+          "id": 72,
+          "label": "Requirement: Moving Smoothly (New idea = new paragraph)"
+        },
+        {
+          "id": 73,
+          "label": "Essential Elements (Well-structured)",
+          "children": [
+            {
+              "id": 74,
+              "label": "Topic Sentence (Headline, introduces main idea)"
+            },
+            {
+              "id": 75,
+              "label": "Supporting Details (Evidence/explanation, adds depth)"
+            },
+            {
+              "id": 76,
+              "label": "Concluding Sentence (Summarizes main point, transition)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "id": 1,
+  "label": "Peripheral Devices (I/O Devices)",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition & Role",
+      "children": [
+        {
+          "id": 3,
+          "label": "Expand capabilities of computing systems"
+        },
+        {
+          "id": 4,
+          "label": "Serve as connectors between digital and physical worlds"
+        },
+        {
+          "id": 5,
+          "label": "Link directly to computer but not involved in main function (processing)"
+        },
+        {
+          "id": 6,
+          "label": "Crucial for user-computer interaction (e.g., keyboard, mouse, monitor)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Importance",
+      "children": [
+        {
+          "id": 8,
+          "label": "Enhanced Functionality"
+        },
+        {
+          "id": 9,
+          "label": "User Interaction (intuitive/effective)"
+        },
+        {
+          "id": 10,
+          "label": "Data Input and Output (digital to physical conversion)"
+        },
+        {
+          "id": 11,
+          "label": "Connectivity (modems, routers, network adapters)"
+        },
+        {
+          "id": 12,
+          "label": "Efficiency and Productivity (external storage)"
+        },
+        {
+          "id": 13,
+          "label": "Specialised Tasks (graphic tablets, webcams, microphones)"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "label": "Input Devices",
+      "children": [
+        {
+          "id": 15,
+          "label": "Function",
+          "children": [
+            {
+              "id": 16,
+              "label": "Receive instructions from external environment"
+            },
+            {
+              "id": 17,
+              "label": "Convert data into computer-readable format"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "label": "Types",
+          "children": [
+            {
+              "id": 19,
+              "label": "Keyboard (Primary input, 104 keys, USB/Bluetooth)"
+            },
+            {
+              "id": 20,
+              "label": "Mouse (Primary pointing device, controls cursor, types: optical, wireless)"
+            },
+            {
+              "id": 21,
+              "label": "Joystick (Navigate cursor, video games, greater precision)"
+            },
+            {
+              "id": 22,
+              "label": "Light Pen (Pen-like pointing device, drawing graphics, selecting objects)"
+            },
+            {
+              "id": 23,
+              "label": "Scanner (Converts physical content to digital format)",
+              "children": [
+                {
+                  "id": 24,
+                  "label": "Types: Flatbed, handheld, sheetfed, drum"
+                }
+              ]
+            },
+            {
+              "id": 25,
+              "label": "Webcam (Captures/streams real-time video, video conferencing)",
+              "children": [
+                {
+                  "id": 26,
+                  "label": "Characteristics: Image Quality (pixels), Frame Rate, Connectivity (USB, Wi-Fi)"
+                }
+              ]
+            },
+            {
+              "id": 27,
+              "label": "Barcode Reader (Interprets light and dark lines, price/product ID)"
+            },
+            {
+              "id": 28,
+              "label": "Microphone (Audio input, recording sound, voice commands)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "label": "Output Devices",
+      "children": [
+        {
+          "id": 30,
+          "label": "Function",
+          "children": [
+            {
+              "id": 31,
+              "label": "Receive information from computer"
+            },
+            {
+              "id": 32,
+              "label": "Present data in human-comprehensible forms (audio, visual, printed)"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "label": "Types",
+          "children": [
+            {
+              "id": 34,
+              "label": "Monitor (VDU, primary output, exhibits processed data)",
+              "children": [
+                {
+                  "id": 35,
+                  "label": "CRT (Cathode-Ray Tube, uses electron guns)"
+                },
+                {
+                  "id": 36,
+                  "label": "Flat Panel Monitor (Lighter, thinner, less power, higher resolution)",
+                  "children": [
+                    {
+                      "id": 37,
+                      "label": "Plasma Monitor (uses plasma cells/noble gases)"
+                    }
+                  ]
+                },
+                {
+                  "id": 38,
+                  "label": "Characteristics: Resolution (pixels), Size, Refresh Rate, Luminance (brightness)"
+                }
+              ]
+            },
+            {
+              "id": 39,
+              "label": "Printer (Produces physical copy of digital document)",
+              "children": [
+                {
+                  "id": 40,
+                  "label": "Impact Printers (Print head strikes ink ribbon)",
+                  "children": [
+                    {
+                      "id": 41,
+                      "label": "Dot matrix printer"
+                    },
+                    {
+                      "id": 42,
+                      "label": "Daisy wheel printer"
+                    },
+                    {
+                      "id": 43,
+                      "label": "Line printer"
+                    },
+                    {
+                      "id": 44,
+                      "label": "Chain printer"
+                    }
+                  ]
+                },
+                {
+                  "id": 45,
+                  "label": "Non-impact Printers (No ribbon, print entire page)",
+                  "children": [
+                    {
+                      "id": 46,
+                      "label": "Laser printers"
+                    },
+                    {
+                      "id": 47,
+                      "label": "Inkjet printers"
+                    }
+                  ]
+                },
+                {
+                  "id": 48,
+                  "label": "Characteristics: Print Quality, Printing Speed (ppm), Connectivity"
+                }
+              ]
+            },
+            {
+              "id": 49,
+              "label": "Plotter (Advanced, high-resolution graphics, large-scale maps/designs)"
+            },
+            {
+              "id": 50,
+              "label": "Projector (Displays computer output on screen/wall, portable, economical)"
+            },
+            {
+              "id": 51,
+              "label": "Speaker (Audio output, requires sound card)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "label": "Storage Devices",
+      "children": [
+        {
+          "id": 53,
+          "label": "Function",
+          "children": [
+            {
+              "id": 54,
+              "label": "Retains all data (files, programs, OS)"
+            },
+            {
+              "id": 55,
+              "label": "Safeguard and facilitate access to data"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "label": "Types",
+          "children": [
+            {
+              "id": 57,
+              "label": "Hard Disk Drive (HDD)",
+              "children": [
+                {
+                  "id": 58,
+                  "label": "Rotating disk (platter) with magnetic substance"
+                },
+                {
+                  "id": 59,
+                  "label": "Characteristics: Ample storage capacity, cost-effective, slower speed, mechanical components"
+                }
+              ]
+            },
+            {
+              "id": 60,
+              "label": "Solid State Drive (SSD)",
+              "children": [
+                {
+                  "id": 61,
+                  "label": "Utilises flash memory (no spinning disk)"
+                },
+                {
+                  "id": 62,
+                  "label": "Characteristics: Faster performance, compact form, lower power consumption, higher price point, no mechanical components"
+                }
+              ]
+            },
+            {
+              "id": 63,
+              "label": "Flash Drive (Pen drive, portable storage, USB port)",
+              "children": [
+                {
+                  "id": 64,
+                  "label": "Characteristics: Portability, Plug-and-Play, High Compatibility, Reusability"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "label": "Communication Devices",
+      "children": [
+        {
+          "id": 66,
+          "label": "Function",
+          "children": [
+            {
+              "id": 67,
+              "label": "Enabling transmission of data and information"
+            },
+            {
+              "id": 68,
+              "label": "Connect to external networks, devices, or the internet"
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "label": "Types",
+          "children": [
+            {
+              "id": 70,
+              "label": "Modem (Modulator-Demodulator)",
+              "children": [
+                {
+                  "id": 71,
+                  "label": "Connects computer to the internet"
+                },
+                {
+                  "id": 72,
+                  "label": "Modulates digital data to analog signal / Demodulates analog to digital"
+                },
+                {
+                  "id": 73,
+                  "label": "Types: Dial-up, DSL, cable, fibre modems"
+                }
+              ]
+            },
+            {
+              "id": 74,
+              "label": "Router",
+              "children": [
+                {
+                  "id": 75,
+                  "label": "Connects two computer networks (and the internet)"
+                },
+                {
+                  "id": 76,
+                  "label": "Directs traffic (finds best path)"
+                },
+                {
+                  "id": 77,
+                  "label": "Includes security features (firewalls)"
+                },
+                {
+                  "id": 78,
+                  "label": "Wi-Fi capabilities"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "id": 1,
+  "label": "Basic Computer Skills & Operations",
+  "children": [
+    {
+      "id": 2,
+      "label": "Primary Operations",
+      "children": [
+        {
+          "id": 3,
+          "label": "Input (Supplying data)"
+        },
+        {
+          "id": 4,
+          "label": "Processing (Calculations/Manipulation)"
+        },
+        {
+          "id": 5,
+          "label": "Output (Providing data to user)"
+        },
+        {
+          "id": 6,
+          "label": "Storage (Saving/Retrieving data)"
+        },
+        {
+          "id": 7,
+          "label": "Control (Flow of data/instructions)"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Input Operations & Devices",
+      "children": [
+        {
+          "id": 9,
+          "label": "Function",
+          "children": [
+            {
+              "id": 10,
+              "label": "Receive instructions from external environment"
+            },
+            {
+              "id": 11,
+              "label": "Convert data into computer-readable format"
+            }
+          ]
+        },
+        {
+            "id": 12,
+            "label": "Devices",
+            "children": [
+              {
+                "id": 13,
+                "label": "Keyboard (QWERTY, ergonomic)"
+              },
+              {
+                "id": 14,
+                "label": "Mouse (Point and click, wired/wireless)"
+              },
+              {
+                "id": 15,
+                "label": "Scanner (Converts image/object to digital image, e.g., flatbed)"
+              },
+              {
+                "id": 16,
+                "label": "Microphone (Converts sound to electrical signal)"
+              },
+              {
+                "id": 17,
+                "label": "Web Camera (Captures visual info, used in video conferencing)"
+              },
+              {
+                "id": 18,
+                "label": "Joystick (Pointing device, commonly for games)"
+              },
+              {
+                "id": 19,
+                "label": "Touchscreen (Input/Output device)"
+              }
+            ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "Processing Operations & Devices",
+      "children": [
+        {
+          "id": 21,
+          "label": "Definition: Manipulating data and instructions by CPU"
+        },
+        {
+          "id": 22,
+          "label": "Operations Included",
+          "children": [
+            {
+              "id": 23,
+              "label": "Arithmetic"
+            },
+            {
+              "id": 24,
+              "label": "Logical"
+            },
+            {
+              "id": 25,
+              "label": "Input/Output"
+            },
+            {
+              "id": 26,
+              "label": "Control"
+            },
+            {
+              "id": 27,
+              "label": "Data Movement"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "label": "Devices",
+          "children": [
+            {
+              "id": 29,
+              "label": "Central Processing Unit (CPU) / Processor (Brain of computer)"
+            },
+            {
+              "id": 30,
+              "label": "Graphics Processing Unit (GPU) (Handles graphics/video calc.)"
+            },
+            {
+              "id": 31,
+              "label": "Digital Signal Processor (DSP) (Optimized for digital signals like audio/video)"
+            },
+            {
+              "id": 32,
+              "label": "Application-specific Integrated Circuit (ASIC)"
+            },
+            {
+              "id": 33,
+              "label": "Field-programmable Gate Array (FPGA)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "label": "Output Operations & Devices",
+      "children": [
+        {
+          "id": 35,
+          "label": "Definition: Displaying or producing information"
+        },
+        {
+          "id": 36,
+          "label": "Formats: Text, graphics, sound, video"
+        },
+        {
+          "id": 37,
+          "label": "Devices",
+          "children": [
+            {
+              "id": 38,
+              "label": "Printers",
+              "children": [
+                {
+                  "id": 39,
+                  "label": "Impact Printers (Print head strikes ink ribbon)",
+                  "children": [
+                    {"id": 40, "label": "Dot matrix printer"},
+                    {"id": 41, "label": "Daisy wheel printer"},
+                    {"id": 42, "label": "Line printer"},
+                    {"id": 43, "label": "Chain printer"}
+                  ]
+                },
+                {
+                  "id": 44,
+                  "label": "Non-impact Printers (No ribbon, print entire page)",
+                  "children": [
+                    {"id": 45, "label": "Laser printers"},
+                    {"id": 46, "label": "Inkjet printers"}
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 47,
+              "label": "Monitors (Display text, images, videos)"
+            },
+            {
+              "id": 48,
+              "label": "Speakers (Deliver sound)"
+            },
+            {
+              "id": 49,
+              "label": "Projectors (Project visual info onto larger surface)"
+            },
+            {
+              "id": 50,
+              "label": "Headphones (Deliver sound directly to ears)"
+            },
+            {
+              "id": 51,
+              "label": "Plotter (Vector graphics printing, restricted to line art)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "label": "Storage Operations & Devices",
+      "children": [
+        {
+          "id": 53,
+          "label": "Function",
+          "children": [
+            {
+              "id": 54,
+              "label": "Retains all data (files, programs, OS)"
+            },
+            {
+              "id": 55,
+              "label": "Safeguard and facilitate access to data"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "label": "Primary Storage (Temporary, volatile/non-volatile)",
+           "children": [
+              {
+                "id": 57,
+                "label": "Random Access Memory (RAM) (Volatile, fast read/write)"
+              },
+              {
+                "id": 58,
+                "label": "Read-only Memory (ROM) (Non-volatile, contains microprogrammed instructions e.g., BIOS)"
+              },
+              {
+                "id": 59,
+                "label": "Cache Memory (High-speed, stores frequently used instructions)"
+              }
+           ]
+        },
+        {
+          "id": 60,
+          "label": "Secondary Storage (Long-term storage)",
+          "children": [
+            {
+              "id": 61,
+              "label": "Hard Disk Drive (HDD) (Magnetic platters, large capacity)"
+            },
+            {
+              "id": 62,
+              "label": "Solid-state Drives (SSDs) (Uses flash memory, faster/more reliable)"
+            },
+            {
+              "id": 63,
+              "label": "Flash Drives (Pen drives, portable USB storage)"
+            },
+            {
+              "id": 64,
+              "label": "Memory Cards (Small, removable storage for portable devices)"
+            },
+            {
+              "id": 65,
+              "label": "External Hard Drives (Backup solution, connect via USB)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "label": "Communication Networking",
+      "children": [
+        {
+          "id": 67,
+          "label": "Definition: Exchange of data between two or more devices"
+        },
+        {
+          "id": 68,
+          "label": "Purpose: Share resources, communicate, work together"
+        },
+        {
+          "id": 69,
+          "label": "Network Types",
+          "children": [
+            {
+              "id": 70,
+              "label": "Local Area Network (LAN) (Limited geographical area, e.g., office)"
+            },
+            {
+              "id": 71,
+              "label": "Metropolitan Area Network (MAN) (Spans a city or large campus)"
+            },
+            {
+              "id": 72,
+              "label": "Wide Area Network (WAN) (Large geographical area, e.g., country/internet)"
+            },
+            {
+              "id": 73,
+              "label": "Wireless Network (Uses Wi-Fi)"
+            },
+            {
+              "id": 74,
+              "label": "Bluetooth Network (Short distance wireless, max 30 feet)"
+            },
+            {
+              "id": 75,
+              "label": "Virtual Private Network (VPN) (Secure connection over the internet)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": 1,
+  "label": "Perspectives in Communication",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition of Perspectives",
+      "children": [
+        {
+          "id": 3,
+          "label": "Ideas, views, or fixed ways of thinking"
+        },
+        {
+          "id": 4,
+          "label": "Affects how communication is conducted"
+        },
+        {
+          "id": 5,
+          "label": "Provides varied lenses to understand dynamic messaging"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Role and Importance",
+      "children": [
+        {
+          "id": 7,
+          "label": "Helps determine what other person is thinking"
+        },
+        {
+          "id": 8,
+          "label": "Leads to successful, productive conversation"
+        },
+        {
+          "id": 9,
+          "label": "Impacted by individual's thoughts and culture"
+        },
+        {
+          "id": 10,
+          "label": "Can strengthen relationships"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Impacted and Shaped By",
+      "children": [
+        {
+          "id": 12,
+          "label": "Cultural background"
+        },
+        {
+          "id": 13,
+          "label": "Language used to express emotions"
+        },
+        {
+          "id": 14,
+          "label": "Personal experiences"
+        },
+        {
+          "id": 15,
+          "label": "Handling of technology"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "label": "Factors Affecting Perspectives (Barriers)",
+      "children": [
+        {
+          "id": 17,
+          "label": "Language",
+          "children": [
+            {
+              "id": 18,
+              "label": "Proficiency influences communication"
+            },
+            {
+              "id": 19,
+              "label": "Incorrect terminology or unfamiliar jargon"
+            },
+            {
+              "id": 20,
+              "label": "Failure to provide sufficient detail"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "label": "Visual Perception",
+          "children": [
+            {
+              "id": 22,
+              "label": "Brain's ability to infer what we see"
+            },
+            {
+              "id": 23,
+              "label": "Tendency to focus on easily noticeable parts"
+            },
+            {
+              "id": 24,
+              "label": "Leads to perspectives based on incomplete information"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "label": "Experiences",
+          "children": [
+            {
+              "id": 26,
+              "label": "Past experiences shape habits, triggers, and sensitivities"
+            },
+            {
+              "id": 27,
+              "label": "Traumatic experiences stop clear communication"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "label": "Prejudice (Biases)",
+          "children": [
+            {
+              "id": 29,
+              "label": "Previously built notions about individuals or groups"
+            },
+            {
+              "id": 30,
+              "label": "Less likely to listen or give benefit of the doubt"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "label": "Feelings",
+          "children": [
+            {
+              "id": 32,
+              "label": "Pivotal role in communication type"
+            },
+            {
+              "id": 33,
+              "label": "Negative feelings lead to closed/unclear communication"
+            },
+            {
+              "id": 34,
+              "label": "Can be influenced by personal opinion (insecurity example)"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "label": "Environment",
+          "children": [
+            {
+              "id": 36,
+              "label": "Noisy or chaotic surroundings cause barriers"
+            },
+            {
+              "id": 37,
+              "label": "Calm environment allows productive communication"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "label": "Cultural Difference",
+          "children": [
+            {
+              "id": 39,
+              "label": "Different interpretations of messages/ideas"
+            },
+            {
+              "id": 40,
+              "label": "Gestures/symbols have varied meanings across cultures"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

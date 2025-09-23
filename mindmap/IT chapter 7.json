@@ -1,0 +1,392 @@
+{
+  "id": 1,
+  "label": "Information and Communications Technology (ICT)",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition and Scope",
+      "children": [
+        {
+          "id": 3,
+          "label": "Broad term for technologies and tools"
+        },
+        {
+          "id": 4,
+          "label": "Functions",
+          "children": [
+            {
+              "id": 5,
+              "label": "Handling information"
+            },
+            {
+              "id": 6,
+              "label": "Processing information"
+            },
+            {
+              "id": 7,
+              "label": "Storing information"
+            },
+            {
+              "id": 8,
+              "label": "Communicating information"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Enables receiving and transmitting information"
+        },
+        {
+          "id": 10,
+          "label": "Combination of wired and wireless networking tools"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Key Components of ICT",
+      "children": [
+        {
+          "id": 12,
+          "label": "Computers",
+          "children": [
+            {
+              "id": 13,
+              "label": "Desktops, PCs, Laptops, Tablets, Smartphones"
+            },
+            {
+              "id": 14,
+              "label": "Processing and storing data"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "label": "Software",
+          "children": [
+            {
+              "id": 16,
+              "label": "Operating systems"
+            },
+            {
+              "id": 17,
+              "label": "OpenOffice (Writer, Calc, Impress, Base)"
+            },
+            {
+              "id": 18,
+              "label": "Multimedia tools and web browsers"
+            },
+            {
+              "id": 19,
+              "label": "Specialised applications"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "label": "Internet",
+          "children": [
+            {
+              "id": 21,
+              "label": "Global network (connects computers/servers)"
+            },
+            {
+              "id": 22,
+              "label": "Allows communication, sharing data, getting information"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "label": "Telecommunication",
+          "children": [
+            {
+              "id": 24,
+              "label": "Telephones (landlines/mobiles)"
+            },
+            {
+              "id": 25,
+              "label": "Messaging, Emails, Video conferencing"
+            },
+            {
+              "id": 26,
+              "label": "Social media platforms"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "label": "Networking",
+          "children": [
+            {
+              "id": 28,
+              "label": "Wired (Ethernet) or Wireless (Wi-Fi)"
+            },
+            {
+              "id": 29,
+              "label": "Enables information exchange"
+            },
+            {
+              "id": 30,
+              "label": "LANs and WANs"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "label": "Data Storage",
+          "children": [
+            {
+              "id": 32,
+              "label": "Hard drives, SSDs (pen drives, SD cards)"
+            },
+            {
+              "id": 33,
+              "label": "External storage devices"
+            },
+            {
+              "id": 34,
+              "label": "Cloud storage (Google Drive, iCloud)"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "label": "Information Security",
+          "children": [
+            {
+              "id": 36,
+              "label": "Measures and protocols"
+            },
+            {
+              "id": 37,
+              "label": "Ensures confidentiality, integrity, availability of data"
+            },
+            {
+              "id": 38,
+              "label": "Prevents data breaches and cyberattacks"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "label": "Multimedia",
+          "children": [
+            {
+              "id": 40,
+              "label": "Integration of text, images, audio, video"
+            },
+            {
+              "id": 41,
+              "label": "Richer content experiences"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "ICT Tools",
+      "children": [
+        {
+          "id": 43,
+          "label": "Smartphones",
+          "children": [
+            {
+              "id": 44,
+              "label": "Portable communication devices"
+            },
+            {
+              "id": 45,
+              "label": "Advanced mobile phones (computer functions)"
+            },
+            {
+              "id": 46,
+              "label": "Touchscreen, GPS, multiple apps"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "label": "Tablets",
+          "children": [
+            {
+              "id": 48,
+              "label": "Portable computing devices"
+            },
+            {
+              "id": 49,
+              "label": "Bigger than smartphones, smaller than laptops"
+            },
+            {
+              "id": 50,
+              "label": "Touchscreen, no physical keyboard"
+            },
+            {
+              "id": 51,
+              "label": "Productivity applications (word processors)"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "label": "Television (TVs)",
+          "children": [
+            {
+              "id": 53,
+              "label": "Audio-visual device"
+            },
+            {
+              "id": 54,
+              "label": "Provides entertainment, news, education"
+            },
+            {
+              "id": 55,
+              "label": "Smart TVs connect to the internet"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "label": "Radio",
+          "children": [
+            {
+              "id": 57,
+              "label": "Oldest ICT tool (audio broadcasts)"
+            },
+            {
+              "id": 58,
+              "label": "Uses radio waves"
+            },
+            {
+              "id": 59,
+              "label": "Interactive medium via internet access"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "label": "Email (Electronic Mail)"
+        },
+        {
+          "id": 61,
+          "label": "E-newspaper (Digital version of print newspaper)"
+        },
+        {
+          "id": 62,
+          "label": "E-readers (Specialised device for digital books)"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "label": "Importance and Role of ICT",
+      "children": [
+        {
+          "id": 64,
+          "label": "In Personal Life",
+          "children": [
+            {
+              "id": 65,
+              "label": "Connecting with people (Social Media)"
+            },
+            {
+              "id": 66,
+              "label": "Entertainment (TV, Radio, Web Browsers)"
+            },
+            {
+              "id": 67,
+              "label": "Learning and information (Educational videos)"
+            },
+            {
+              "id": 68,
+              "label": "Online Shopping"
+            },
+            {
+              "id": 69,
+              "label": "Money management (Online banking, bill paying)"
+            },
+            {
+              "id": 70,
+              "label": "Healthy living (Fitness apps)"
+            },
+            {
+              "id": 71,
+              "label": "Travel (Booking tickets/hotels)"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "label": "At Workplace (General)",
+          "children": [
+            {
+              "id": 73,
+              "label": "Improved efficiency"
+            },
+            {
+              "id": 74,
+              "label": "Keeping data safe and organised"
+            },
+            {
+              "id": 75,
+              "label": "Collaborating on projects"
+            },
+            {
+              "id": 76,
+              "label": "Training and learning skills"
+            },
+            {
+              "id": 77,
+              "label": "Presenting data (multimedia elements)"
+            }
+          ]
+        },
+        {
+          "id": 78,
+          "label": "In Key Sectors",
+          "children": [
+            {
+              "id": 79,
+              "label": "Healthcare",
+              "children": [
+                {
+                  "id": 80,
+                  "label": "Electronic health records (EHRs)"
+                },
+                {
+                  "id": 81,
+                  "label": "Telemedicine and remote consultancy"
+                }
+              ]
+            },
+            {
+              "id": 82,
+              "label": "Banking and finance (Online payments, managing finances)"
+            },
+            {
+              "id": 83,
+              "label": "Agriculture (Weather forecasting, research, training)"
+            },
+            {
+              "id": 84,
+              "label": "Manufacturing and industry (Automating production)"
+            },
+            {
+              "id": 85,
+              "label": "Education (Enhanced learning via video/audio/quizzes)"
+            },
+            {
+              "id": 86,
+              "label": "Advertising and marketing (Social media campaigns)"
+            },
+            {
+              "id": 87,
+              "label": "Fashion and retail (Online selling, virtual try-ons)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

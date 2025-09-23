@@ -1,0 +1,354 @@
+{
+  "id": 1,
+  "label": "Self-Confidence",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition and Importance",
+      "children": [
+        {
+          "id": 3,
+          "label": "Definition",
+          "children": [
+            {
+              "id": 4,
+              "label": "Belief in judgement, abilities, and capabilities"
+            },
+            {
+              "id": 5,
+              "label": "Reflected in thoughts, ideas, and behavior"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "label": "Importance/Benefits",
+          "children": [
+            {
+              "id": 7,
+              "label": "Helps build aspirations"
+            },
+            {
+              "id": 8,
+              "label": "Allows tackling difficult challenges"
+            },
+            {
+              "id": 9,
+              "label": "Enables good communication"
+            },
+            {
+              "id": 10,
+              "label": "Significant for health and psychological well-being"
+            },
+            {
+              "id": 11,
+              "label": "Asset to any organization (believing in goal achievement)"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "label": "Misconception: Natural and Unchangeable (False)"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "Qualities of a Confident Person",
+      "children": [
+        {
+          "id": 14,
+          "label": "Trust in their own capability"
+        },
+        {
+          "id": 15,
+          "label": "Readiness to accept new challenges"
+        },
+        {
+          "id": 16,
+          "label": "Willingness to take risks"
+        },
+        {
+          "id": 17,
+          "label": "Associated Qualities (Examples)",
+          "children": [
+            {
+              "id": 18,
+              "label": "Self-belief (M.S. Dhoni)"
+            },
+            {
+              "id": 19,
+              "label": "Hard work (Dr. APJ Abdul Kalam)"
+            },
+            {
+              "id": 20,
+              "label": "Commitment (Nelson Mandela)"
+            },
+            {
+              "id": 21,
+              "label": "Positive attitude (Malala Yousufzai)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "label": "Factors Influencing Self-Confidence",
+      "children": [
+        {
+          "id": 23,
+          "label": "Social Factors",
+          "children": [
+            {
+              "id": 24,
+              "label": "Society acts like a mirror (family, friends, school)"
+            },
+            {
+              "id": 25,
+              "label": "Positive Influence (Teammates congratulating goal)"
+            },
+            {
+              "id": 26,
+              "label": "Negative Influence",
+              "children": [
+                {
+                  "id": 27,
+                  "label": "Mockery from peers (Science enthusiast Mariam)"
+                },
+                {
+                  "id": 28,
+                  "label": "Constant comparison/high expectations (Simran)"
+                },
+                {
+                  "id": 29,
+                  "label": "Lack of attention, punishment, excessive criticism"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "label": "Cultural Factors",
+          "children": [
+            {
+              "id": 31,
+              "label": "Customs, beliefs, traditions, values"
+            },
+            {
+              "id": 32,
+              "label": "Influence Types",
+              "children": [
+                {
+                  "id": 33,
+                  "label": "Can Limit (Gender roles limit aspirations)"
+                },
+                {
+                  "id": 34,
+                  "label": "Can Boost (Celebrating cultural identity/heritage)"
+                }
+              ]
+            },
+            {
+              "id": 35,
+              "label": "Positive Example: Community support for arts (Priya)"
+            },
+            {
+              "id": 36,
+              "label": "Negative Example: Pressure to follow legacy (Rahul)"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "label": "Physical Factors",
+          "children": [
+            {
+              "id": 38,
+              "label": "Physique, mental state, and appearance"
+            },
+            {
+              "id": 39,
+              "label": "Positive Influence",
+              "children": [
+                {
+                  "id": 40,
+                  "label": "Regular exercise and nutritious meals (Neha)"
+                },
+                {
+                  "id": 41,
+                  "label": "Good physical health and appearance perception"
+                }
+              ]
+            },
+            {
+              "id": 42,
+              "label": "Negative Influence",
+              "children": [
+                {
+                  "id": 43,
+                  "label": "Dealing with physical disability (Rajeev)"
+                },
+                {
+                  "id": 44,
+                  "label": "Comparing self to impractical beauty ideals (Gita)"
+                }
+              ]
+            },
+            {
+              "id": 45,
+              "label": "Need to embrace unique appearances and treat disabled kindly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "label": "Factors That Decrease Self-Confidence",
+      "children": [
+        {
+          "id": 47,
+          "label": "Negative Self-belief (Creates self-doubt)"
+        },
+        {
+          "id": 48,
+          "label": "Dwelling on Past Mistakes (Cycle of self-criticism)"
+        },
+        {
+          "id": 49,
+          "label": "Fear of Failure (Avoidance prevents growth)"
+        },
+        {
+          "id": 50,
+          "label": "Negative Surroundings (Pessimistic viewpoints)"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "label": "Tips to Build Self-Confidence (Strategies)",
+      "children": [
+        {
+          "id": 52,
+          "label": "Get Rid of Negative Thoughts",
+          "children": [
+            {
+              "id": 53,
+              "label": "Change mindset to positive things"
+            },
+            {
+              "id": 54,
+              "label": "Identify causes (facts, assumptions, fear)"
+            },
+            {
+              "id": 55,
+              "label": "Use positive self-talk"
+            },
+            {
+              "id": 56,
+              "label": "Set realistic and achievable goals"
+            },
+            {
+              "id": 57,
+              "label": "Practice meditation and hobbies"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "label": "Think Positively",
+          "children": [
+            {
+              "id": 59,
+              "label": "Focus on improvement, not negatives"
+            },
+            {
+              "id": 60,
+              "label": "View difficulties as growth opportunities"
+            },
+            {
+              "id": 61,
+              "label": "Enhances energy and performance"
+            },
+            {
+              "id": 62,
+              "label": "Using SMILE Acronym",
+              "children": [
+                {
+                  "id": 63,
+                  "label": "Start Your Day in a Positive Way (Gratefulness)"
+                },
+                {
+                  "id": 64,
+                  "label": "Manage Time to Relax (Self-care, deep breathing)"
+                },
+                {
+                  "id": 65,
+                  "label": "Imagine the Best in Any Situation"
+                },
+                {
+                  "id": 66,
+                  "label": "Learn to Take Feedback in a Positive Way"
+                },
+                {
+                  "id": 67,
+                  "label": "Express Gratitude Regularly"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "label": "Find Happiness in Small Things (Appreciate little joys)"
+        },
+        {
+          "id": 69,
+          "label": "Stay Clean, Hygienic and Smart",
+          "children": [
+            {
+              "id": 70,
+              "label": "Maintain good personal hygiene/appearance"
+            },
+            {
+              "id": 71,
+              "label": "Dress appropriately for context"
+            },
+            {
+              "id": 72,
+              "label": "Regular physical activity and balanced diet"
+            },
+            {
+              "id": 73,
+              "label": "Embrace unique qualities (avoid comparisons)"
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "label": "Chat With Positive People",
+          "children": [
+            {
+              "id": 75,
+              "label": "Provide encouragement and support"
+            },
+            {
+              "id": 76,
+              "label": "Serve as role models"
+            },
+            {
+              "id": 77,
+              "label": "Take constructive feedback"
+            },
+            {
+              "id": 78,
+              "label": "Reduce negativity and stress"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

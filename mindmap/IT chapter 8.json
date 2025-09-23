@@ -1,0 +1,312 @@
+{
+  "id": 1,
+  "label": "Components of Computer System",
+  "children": [
+    {
+      "id": 2,
+      "label": "Hardware",
+      "children": [
+        {
+          "id": 3,
+          "label": "Categories",
+          "children": [
+            {
+              "id": 4,
+              "label": "Input Devices",
+              "children": [
+                {
+                  "id": 5,
+                  "label": "Keyboard"
+                },
+                {
+                  "id": 6,
+                  "label": "Mouse"
+                },
+                {
+                  "id": 7,
+                  "label": "Scanner"
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "label": "Output Devices",
+              "children": [
+                {
+                  "id": 9,
+                  "label": "Monitors"
+                },
+                {
+                  "id": 10,
+                  "label": "Printers"
+                },
+                {
+                  "id": 11,
+                  "label": "Speakers"
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "label": "Storage Devices (Secondary Storage)",
+              "children": [
+                {
+                  "id": 13,
+                  "label": "Hard Disk Drives (HDDs)"
+                },
+                {
+                  "id": 14,
+                  "label": "Solid-State Drives (SSDs)"
+                },
+                {
+                  "id": 15,
+                  "label": "CDs / DVDs"
+                },
+                {
+                  "id": 16,
+                  "label": "USB Drives (External Storage)"
+                }
+              ]
+            },
+            {
+              "id": 17,
+              "label": "Internal Components",
+              "children": [
+                {
+                  "id": 18,
+                  "label": "CPU"
+                },
+                {
+                  "id": 19,
+                  "label": "Motherboard"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "label": "Central Processing Unit (CPU)",
+          "children": [
+            {
+              "id": 21,
+              "label": "Brain of the Computer"
+            },
+            {
+              "id": 22,
+              "label": "Executes Instructions & Calculations"
+            },
+            {
+              "id": 23,
+              "label": "Components",
+              "children": [
+                {
+                  "id": 24,
+                  "label": "Arithmetic Logic Unit (ALU)",
+                   "children": [
+                      {
+                        "id": 25,
+                        "label": "Performs Arithmetic & Logical Operations"
+                      },
+                      {
+                        "id": 26,
+                        "label": "Contains Accumulator (ACC) Register"
+                      }
+                   ]
+                },
+                {
+                  "id": 27,
+                  "label": "Control Unit (CU)",
+                  "children": [
+                    {
+                      "id": 28,
+                      "label": "Coordinates & Manages CPU Components"
+                    },
+                    {
+                      "id": 29,
+                      "label": "Arranges Data Flow (to/from CPU)"
+                    },
+                    {
+                      "id": 30,
+                      "label": "Decodes & Interprets Instructions"
+                    }
+                  ]
+                },
+                {
+                  "id": 31,
+                  "label": "Memory Unit (MU)",
+                   "children": [
+                      {
+                        "id": 32,
+                        "label": "Temporary memory registers"
+                      },
+                      {
+                        "id": 33,
+                        "label": "Stores data utilized by processor"
+                      }
+                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "label": "Memory (Primary Memory)",
+          "children": [
+            {
+              "id": 35,
+              "label": "RAM (Random Access Memory)",
+              "children": [
+                {
+                  "id": 36,
+                  "label": "Volatile Memory (Data lost when off)"
+                },
+                {
+                  "id": 37,
+                  "label": "Temporarily holds current data/code"
+                },
+                {
+                  "id": 38,
+                  "label": "CPU can Read/Write/Alter data"
+                },
+                {
+                  "id": 39,
+                  "label": "Types of RAM",
+                  "children": [
+                    {
+                      "id": 40,
+                      "label": "SRAM (Static RAM)"
+                    },
+                    {
+                      "id": 41,
+                      "label": "DRAM (Dynamic RAM)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 42,
+              "label": "ROM (Read Only Memory)",
+              "children": [
+                {
+                  "id": 43,
+                  "label": "Non-Volatile Memory (Data permanent)"
+                },
+                {
+                  "id": 44,
+                  "label": "Stores instructions/programs (e.g., BIOS)"
+                },
+                {
+                  "id": 45,
+                  "label": "Used for Computer Firmware"
+                },
+                {
+                  "id": 46,
+                  "label": "CPU can only Read data"
+                },
+                {
+                  "id": 47,
+                  "label": "Types of ROM",
+                   "children": [
+                      {
+                        "id": 48,
+                        "label": "PROM (Programmable ROM)"
+                      },
+                      {
+                        "id": 49,
+                        "label": "EPROM (Erasable PROM)"
+                      },
+                      {
+                        "id": 50,
+                        "label": "EEPROM (Electrically EPROM)"
+                      }
+                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "label": "Motherboard",
+          "children": [
+            {
+              "id": 52,
+              "label": "Primary circuit board"
+            },
+            {
+              "id": 53,
+              "label": "Connects all essential components"
+            },
+            {
+              "id": 54,
+              "label": "Houses CPU, Memory, Peripheral Connectors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "label": "Software",
+      "children": [
+        {
+          "id": 56,
+          "label": "Set of Instructions/Programs"
+        },
+        {
+          "id": 57,
+          "label": "Cannot be touched or felt"
+        },
+        {
+          "id": 58,
+          "label": "System Software",
+          "children": [
+            {
+              "id": 59,
+              "label": "Controls overall working of computer"
+            },
+            {
+              "id": 60,
+              "label": "Manages I/O Operations"
+            },
+            {
+              "id": 61,
+              "label": "Example: Operating System (OS)"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "label": "Application Software",
+          "children": [
+            {
+              "id": 63,
+              "label": "Facilitates specific tasks for users"
+            },
+            {
+              "id": 64,
+              "label": "Examples: Word Processors, Spreadsheets, Photoshop"
+            },
+            {
+              "id": 65,
+              "label": "Types",
+               "children": [
+                  {
+                    "id": 66,
+                    "label": "General-Purpose Software"
+                  },
+                  {
+                    "id": 67,
+                    "label": "Customised Software"
+                  }
+               ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

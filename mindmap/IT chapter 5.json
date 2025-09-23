@@ -1,0 +1,224 @@
+{
+  "id": 1,
+  "label": "Self-management and Its Impact",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition and Scope",
+      "children": [
+        {
+          "id": 3,
+          "label": "Capability to exercise control over",
+          "children": [
+            {
+              "id": 4,
+              "label": "Feelings"
+            },
+            {
+              "id": 5,
+              "label": "Ideas"
+            },
+            {
+              "id": 6,
+              "label": "Thoughts"
+            },
+            {
+              "id": 7,
+              "label": "Emotions"
+            },
+            {
+              "id": 8,
+              "label": "Behaviour"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Goal: Achieve desired goals (Personal/Professional)"
+        },
+        {
+          "id": 10,
+          "label": "Outcomes",
+          "children": [
+            {
+              "id": 11,
+              "label": "Make effective decisions"
+            },
+            {
+              "id": 12,
+              "label": "Maintain well-being"
+            },
+            {
+              "id": 13,
+              "label": "Set priorities"
+            },
+            {
+              "id": 14,
+              "label": "Manage time"
+            },
+            {
+              "id": 15,
+              "label": "Control impulses"
+            },
+            {
+              "id": 16,
+              "label": "Take responsibility"
+            },
+            {
+              "id": 17,
+              "label": "Become trustworthy and reliable"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "label": "Requirement: Acquire variety of abilities combined with discipline"
+        },
+        {
+          "id": 19,
+          "label": "Misconception: Not about eliminating all uncertainties"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "Self-management Skills",
+      "children": [
+        {
+          "id": 21,
+          "label": "Self-awareness",
+          "children": [
+            {
+              "id": 22,
+              "label": "Know oneself (likes, dislikes, strengths, weaknesses)"
+            },
+            {
+              "id": 23,
+              "label": "Reflect on experiences"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "label": "Self-confidence (Believe in ability to complete task)"
+        },
+        {
+          "id": 25,
+          "label": "Self-motivation",
+          "children": [
+            {
+              "id": 26,
+              "label": "Intrinsic feeling/internal drive"
+            },
+            {
+              "id": 27,
+              "label": "Encourages task completion independently"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "label": "Problem solving",
+          "children": [
+            {
+              "id": 29,
+              "label": "Identify problems/challenges"
+            },
+            {
+              "id": 30,
+              "label": "Analyze issues"
+            },
+            {
+              "id": 31,
+              "label": "Implement strategies to resolve"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "label": "Teamwork (Collaborate towards same goal)"
+        },
+        {
+          "id": 33,
+          "label": "Time management (Complete tasks within deadlines)"
+        },
+        {
+          "id": 34,
+          "label": "Goal setting",
+          "children": [
+            {
+              "id": 35,
+              "label": "Plan clear and achievable goals"
+            },
+            {
+              "id": 36,
+              "label": "Provides motivation"
+            },
+            {
+              "id": 37,
+              "label": "SMART framework"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "label": "Decision making (Evaluate options/consequences)"
+        },
+        {
+          "id": 39,
+          "label": "Stress management (Handle work efficiently under pressure)"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "label": "Positive Results and Benefits",
+      "children": [
+        {
+          "id": 41,
+          "label": "Improved Productivity"
+        },
+        {
+          "id": 42,
+          "label": "Personal Well-being"
+        },
+        {
+          "id": 43,
+          "label": "Fulfilment of Long-term Goals"
+        },
+        {
+          "id": 44,
+          "label": "Helps in Achieving Goals (Clear objectives)"
+        },
+        {
+          "id": 45,
+          "label": "Time Efficiency (Allocate time wisely)"
+        },
+        {
+          "id": 46,
+          "label": "Reduces Stress (Deal with pending tasks by priority)"
+        },
+        {
+          "id": 47,
+          "label": "Improves Relationships (Better communication/emotional regulation)"
+        },
+        {
+          "id": 48,
+          "label": "Makes You More Organised (Plan schedules, allot time)"
+        },
+        {
+          "id": 49,
+          "label": "Enhances Problem-solving Abilities"
+        },
+        {
+          "id": 50,
+          "label": "Career Advancement (Fulfil responsibilities)"
+        },
+        {
+          "id": 51,
+          "label": "Instils Discipline (Maintain focus, stay committed)"
+        }
+      ]
+    }
+  ]
+}

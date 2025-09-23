@@ -1,0 +1,250 @@
+{
+  "id": 1,
+  "label": "Communication and Its Elements",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition of Communication",
+      "children": [
+        {
+          "id": 3,
+          "label": "Act of Transmitting",
+          "children": [
+            {
+              "id": 4,
+              "label": "Information"
+            },
+            {
+              "id": 5,
+              "label": "Thoughts"
+            },
+            {
+              "id": 6,
+              "label": "Concepts"
+            },
+            {
+              "id": 7,
+              "label": "Emotions"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "label": "Mediums Used",
+          "children": [
+            {
+              "id": 9,
+              "label": "Verbal Language"
+            },
+            {
+              "id": 10,
+              "label": "Written Expressions"
+            },
+            {
+              "id": 11,
+              "label": "Non-Verbal Cues (Body Language/Gestures)"
+            },
+            {
+              "id": 12,
+              "label": "Visual or Auditory Cues"
+            },
+            {
+              "id": 13,
+              "label": "Modern Technology"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "label": "Societal Role",
+          "children": [
+            {
+              "id": 15,
+              "label": "Binding Agent"
+            },
+            {
+              "id": 16,
+              "label": "Unites Communities"
+            },
+            {
+              "id": 17,
+              "label": "Vital for Society Functioning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "label": "Importance of Communication Skills",
+      "children": [
+        {
+          "id": 19,
+          "label": "Building Relationships (Trust/Understanding)"
+        },
+        {
+          "id": 20,
+          "label": "Effective Interaction (Personal/Professional/Social)"
+        },
+        {
+          "id": 21,
+          "label": "Problem Solving",
+          "children": [
+            {
+              "id": 22,
+              "label": "Crucial for finding solutions"
+            },
+            {
+              "id": 23,
+              "label": "Resolving conflicts/disputes"
+            },
+            {
+              "id": 24,
+              "label": "Avoiding misunderstandings"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "label": "Sharing Knowledge (Across generations)"
+        },
+        {
+          "id": 26,
+          "label": "Leadership and Influence (Conveying vision/Inspiring others)"
+        },
+        {
+          "id": 27,
+          "label": "Expressing Emotions (Joy, Affection, Sadness)"
+        },
+        {
+          "id": 28,
+          "label": "Personal Development (Growth/Confidence/Self-esteem)"
+        },
+        {
+          "id": 29,
+          "label": "Negotiation Skills"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "label": "Elements of a Communication Cycle",
+      "children": [
+        {
+          "id": 31,
+          "label": "Sender (Communicator/Source)",
+          "children": [
+            {
+              "id": 32,
+              "label": "Starts the process"
+            },
+            {
+              "id": 33,
+              "label": "Generates a message"
+            },
+            {
+              "id": 34,
+              "label": "Presents ideas clearly"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "label": "Ideas",
+          "children": [
+            {
+              "id": 36,
+              "label": "Thoughts/Concepts/Information"
+            },
+            {
+              "id": 37,
+              "label": "Facts, Instructions, Opinions, Emotions"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "label": "Encoding",
+          "children": [
+            {
+              "id": 39,
+              "label": "Putting ideas into transmittable format"
+            },
+            {
+              "id": 40,
+              "label": "Selection of words/symbols/gestures"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "label": "Communication Channel (Medium)",
+          "children": [
+            {
+              "id": 42,
+              "label": "Transmits encoded message"
+            },
+            {
+              "id": 43,
+              "label": "Verbal (spoken/written)"
+            },
+            {
+              "id": 44,
+              "label": "Non-Verbal (visual cues/body language)"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "label": "Receiver (Intended Recipient)",
+          "children": [
+            {
+              "id": 46,
+              "label": "Actively listens/observes/interprets"
+            },
+            {
+              "id": 47,
+              "label": "Understanding impacts success"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "label": "Decoding",
+          "children": [
+            {
+              "id": 49,
+              "label": "Interprets encoded message"
+            },
+            {
+              "id": 50,
+              "label": "Extracts meaning (translating symbols to thoughts)"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "label": "Feedback",
+          "children": [
+            {
+              "id": 52,
+              "label": "Response or reaction provided by receiver"
+            },
+            {
+              "id": 53,
+              "label": "Confirms message received accurately"
+            },
+            {
+              "id": 54,
+              "label": "Closes the communication loop"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "label": "Cycle is Two-Way Exchange (Not one-way process)"
+        }
+      ]
+    }
+  ]
+}
