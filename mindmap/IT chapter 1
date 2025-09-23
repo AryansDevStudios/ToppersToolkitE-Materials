@@ -1,0 +1,160 @@
+{
+  "id": 1,
+  "label": "Methods of Communication",
+  "children": [
+    {
+      "id": 2,
+      "label": "Definition and Origin",
+      "children": [
+        { "id": 3, "label": "Latin Origin: 'commūnicāre'", "children": [] },
+        { "id": 4, "label": "Meaning: 'to share'", "children": [] },
+        { "id": 5, "label": "Process of sharing information, thoughts, feelings, or messages", "children": [] },
+        { "id": 6, "label": "Essential aspect of human interaction", "children": [] }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Verbal Communication (Words)",
+      "children": [
+        {
+          "id": 8,
+          "label": "Definition",
+          "children": [
+            { "id": 9, "label": "Sharing ideas using spoken or written words", "children": [] },
+            { "id": 10, "label": "Uses language to express effectively", "children": [] }
+          ]
+        },
+        {
+          "id": 11,
+          "label": "Types",
+          "children": [
+            {
+              "id": 12,
+              "label": "Oral or Spoken Communication",
+              "children": [
+                { "id": 13, "label": "Involves talking or speaking", "children": [] },
+                {
+                  "id": 14,
+                  "label": "Types of Oral Communication",
+                  "children": [
+                    { "id": 15, "label": "Face-to-face conversations (including small group and public speaking)", "children": [] },
+                    { "id": 16, "label": "Video/phone conversations (electronic devices)", "children": [] }
+                  ]
+                },
+                {
+                  "id": 17,
+                  "label": "Factors for Effective Oral Communication",
+                  "children": [
+                    { "id": 18, "label": "Pace (comfortable speed)", "children": [] },
+                    { "id": 19, "label": "Fluency (speaking smoothly)", "children": [] },
+                    { "id": 20, "label": "Choice of words (appropriate language)", "children": [] },
+                    { "id": 21, "label": "Volume (suitable level)", "children": [] },
+                    { "id": 22, "label": "Clarity (pronouncing words clearly)", "children": [] },
+                    { "id": 23, "label": "Tone (conveys emotions/intent)", "children": [] }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 24,
+              "label": "Written Communication",
+              "children": [
+                { "id": 25, "label": "Involves written or typed words", "children": [] },
+                { "id": 26, "label": "Essential for distant communication or documentation", "children": [] },
+                {
+                  "id": 27,
+                  "label": "Types of Written Communication",
+                  "children": [
+                    { "id": 28, "label": "Letters (formal or informal postal messages)", "children": [] },
+                    { "id": 29, "label": "SMS (Short Message Service, quick and brief updates)", "children": [] },
+                    { "id": 30, "label": "Emails (electronic mail via computer network)", "children": [] },
+                    { "id": 31, "label": "Books, newspapers, and magazines (for large audience)", "children": [] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "label": "Advantages",
+          "children": [
+            { "id": 33, "label": "Ease and speed (real-time, immediate response)", "children": [] },
+            { "id": 34, "label": "Adaptability (adjust message based on response)", "children": [] },
+            { "id": 35, "label": "Communicating to the masses (public speeches, media)", "children": [] },
+            { "id": 36, "label": "Emotional expression (via tone, intonation)", "children": [] }
+          ]
+        },
+        {
+          "id": 37,
+          "label": "Disadvantages",
+          "children": [
+            { "id": 38, "label": "Cultural barriers (misinterpretation due to language/accent)", "children": [] },
+            { "id": 39, "label": "Language and clarity issues (poor word choice leads to confusion)", "children": [] },
+            { "id": 40, "label": "Non-verbal elements mismatch (mixed messages)", "children": [] },
+            { "id": 41, "label": "Limited to auditory sensory channel (not accessible for hearing impaired)", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "Non-verbal Communication (No Words)",
+      "children": [
+        { "id": 43, "label": "Definition: Sending messages without using spoken or written language", "children": [] },
+        { "id": 44, "label": "Involves: Expressions, gestures, body language, signals", "children": [] },
+        {
+          "id": 45,
+          "label": "Types/Aspects",
+          "children": [
+            { "id": 46, "label": "Facial expressions (convey emotional state, e.g., smile/frown)", "children": [] },
+            { "id": 47, "label": "Gestures (movement of body parts, e.g., nodding head)", "children": [] },
+            { "id": 48, "label": "Posture (stances while standing or sitting, conveys confidence/mood)", "children": [] },
+            { "id": 49, "label": "Touch (physical contact, e.g., handshake or pat)", "children": [] },
+            { "id": 50, "label": "Space (physical distance between people)", "children": [] },
+            { "id": 51, "label": "Eye contact (shows interest and attentiveness)", "children": [] },
+            { "id": 52, "label": "Paralanguage (volume, tone, and pace of speaking)", "children": [] }
+          ]
+        },
+        { "id": 53, "label": "Advantages", "children": [] },
+        { "id": 54, "label": "Disadvantages", "children": [] }
+      ]
+    },
+    {
+      "id": 55,
+      "label": "Visual Communication (Visual Components)",
+      "children": [
+        { "id": 56, "label": "Definition: Using pictures, symbols, and designs to share information", "children": [] },
+        {
+          "id": 57,
+          "label": "Examples",
+          "children": [
+            { "id": 58, "label": "Signs and Logos", "children": [] },
+            { "id": 59, "label": "Drawings and Illustrations", "children": [] },
+            { "id": 60, "label": "Graphic design", "children": [] },
+            { "id": 61, "label": "Animations (moving pictures)", "children": [] },
+            { "id": 62, "label": "Traffic signs and lights", "children": [] }
+          ]
+        },
+        {
+          "id": 63,
+          "label": "Advantages",
+          "children": [
+            { "id": 64, "label": "Makes meaningful (effective use of graphics/charts)", "children": [] },
+            { "id": 65, "label": "Easy comprehension (visual aids support understanding)", "children": [] },
+            { "id": 66, "label": "Attention grabbing (especially coupled with verbal)", "children": [] }
+          ]
+        },
+        {
+          "id": 67,
+          "label": "Disadvantages",
+          "children": [
+            { "id": 68, "label": "Lack of details (may not fully convey complex concepts)", "children": [] },
+            { "id": 69, "label": "Costly (some visual aids are expensive)", "children": [] },
+            { "id": 70, "label": "Subjectivity (interpretation varies from person to person)", "children": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}
