@@ -1,4 +1,7 @@
-cd /opt/render/project/src
+cd /opt/render/project/src/ToppersToolkitE-Materials
+pwd
+ls
+
 chmod +x start.sh
 chmod +x filebrowser
 chmod +x start.js
