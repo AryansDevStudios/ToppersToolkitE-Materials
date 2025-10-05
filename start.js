@@ -7,7 +7,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // --- Part 0: Setup Logging and Environment Variables ---
 
-const projectPath = '/workspaces/ToppersToolkitE-Materials';
+const projectPath = '/opt/render/project/src/ToppersToolkitE-Materials';
 const publicPort = 8080; // The port users will connect to
 const filebrowserPort = 8081; // The internal port for File Browser
 
