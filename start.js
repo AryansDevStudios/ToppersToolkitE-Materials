@@ -1,51 +1,64 @@
-const express = require('express');
+const { spawn } = require('child_process');
 const shell = require('shelljs');
 const path = require('path');
 const fs = require('fs');
 
 // --- Part 0: Setup Logging and Environment Variables ---
 
-// The path to your project directory for both serving and syncing.
 const projectPath = '/workspaces/ToppersToolkitE-Materials';
-
-// Create a write stream for the log file. The 'a' flag means we will append to the file.
 const logStream = fs.createWriteStream(path.join(__dirname, '.gitlog'), { flags: 'a' });
 
-// Override console.log to write to the file and the actual console
 console.log = function(message) {
   const timestamp = new Date().toISOString();
   const logMessage = `[${timestamp}] ${message}\n`;
   logStream.write(logMessage);
-  process.stdout.write(logMessage); // Also write to the actual console
+  process.stdout.write(logMessage);
 };
 
-// Override console.error to write to the file and the actual console
 console.error = function(message) {
   const timestamp = new Date().toISOString();
   const errorMessage = `[${timestamp}] ERROR: ${message}\n`;
   logStream.write(errorMessage);
-  process.stderr.write(errorMessage); // Also write to the actual error console
+  process.stderr.write(errorMessage);
 };
 
-// Load environment variables from .env file
 require('dotenv').config();
 
 // --- Main Application Logic ---
 
-const app = express();
-const port = 8080;
+console.log('--- Initializing File Browser and Git Sync Process ---');
 
-console.log('--- Initializing Server and Git Sync Process ---');
+// --- Part 1: Start the File Browser Server ---
 
-// --- Part 1: Serve Static Files ---
-app.use(express.static(projectPath));
+// --- FIX: Define the full path to the filebrowser executable ---
+const filebrowserExecutable = path.join(__dirname, 'filebrowser');
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server listening at http://0.0.0.0:${port}`);
-  console.log(`Serving files from ${projectPath}`);
+const filebrowserArgs = ['-a', '0.0.0.0', '-p', '8080', '-r', projectPath];
+
+console.log(`Starting File Browser on 0.0.0.0:8080 for directory ${projectPath}`);
+// --- FIX: Use the full path in the spawn command ---
+const filebrowser = spawn(filebrowserExecutable, filebrowserArgs);
+
+// --- FIX: Add a specific error handler for the spawn process itself ---
+// This will catch the 'ENOENT' error and prevent the script from crashing.
+filebrowser.on('error', (err) => {
+  console.error(`Failed to start File Browser process: ${err.message}`);
+  console.error('Please ensure the "filebrowser" executable is in the same directory as this script and has execute permissions (chmod +x filebrowser).');
 });
 
-// --- Part 2: Pull and Push to GitHub Periodically ---
+filebrowser.stdout.on('data', (data) => {
+  console.log(`[FileBrowser] ${data.toString().trim()}`);
+});
+
+filebrowser.stderr.on('data', (data) => {
+  console.error(`[FileBrowser] ${data.toString().trim()}`);
+});
+
+filebrowser.on('close', (code) => {
+  console.error(`File Browser process exited with code ${code}`);
+});
+
+// --- Part 2: Pull and Push to GitHub Periodically (No changes below this line) ---
 setInterval(() => {
   console.log('--- Running Git Sync ---');
 
@@ -128,4 +141,4 @@ setInterval(() => {
   }
 
   console.log('--- Git Sync Successful ---');
-}, 5000); // Sync interval set to 5 seconds
+}, 5000);

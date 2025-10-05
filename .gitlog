@@ -10,3 +10,10 @@
 [2025-10-05T08:24:04.515Z] Pushing changes to remote...
 [2025-10-05T08:24:06.837Z] --- Git Sync Successful ---
 [2025-10-05T08:24:08.427Z] --- Running Git Sync ---
+[2025-10-05T08:30:52.918Z] [dotenv@17.2.3] injecting env (2) from .env [2m-- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`[0m
+[2025-10-05T08:30:52.919Z] --- Initializing File Browser and Git Sync Process ---
+[2025-10-05T08:30:52.919Z] Starting File Browser on 0.0.0.0:8080 for directory /workspaces/ToppersToolkitE-Materials
+[2025-10-05T08:30:52.940Z] ERROR: [FileBrowser] 2025/10/05 08:30:52 Using database: /workspaces/ToppersToolkitE-Materials/filebrowser.db
+[2025-10-05T08:30:52.941Z] ERROR: [FileBrowser] 2025/10/05 08:30:52 No config file used
+[2025-10-05T08:30:52.942Z] [FileBrowser] 2025/10/05 08:30:52 Listening on [::]:8080
+[2025-10-05T08:30:57.928Z] --- Running Git Sync ---
