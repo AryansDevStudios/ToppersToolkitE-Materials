@@ -6,59 +6,62 @@ const fs = require('fs');
 // --- Part 0: Setup Logging and Environment Variables ---
 
 const projectPath = '/workspaces/ToppersToolkitE-Materials';
+
+// Create a write stream for the log file. The 'a' flag means we will append to the file.
 const logStream = fs.createWriteStream(path.join(__dirname, '.gitlog'), { flags: 'a' });
 
+// Override console.log to write ONLY to the .gitlog file.
 console.log = function(message) {
   const timestamp = new Date().toISOString();
   const logMessage = `[${timestamp}] ${message}\n`;
   logStream.write(logMessage);
-  process.stdout.write(logMessage);
 };
 
+// Override console.error to write ONLY to the .gitlog file.
 console.error = function(message) {
   const timestamp = new Date().toISOString();
   const errorMessage = `[${timestamp}] ERROR: ${message}\n`;
   logStream.write(errorMessage);
-  process.stderr.write(errorMessage);
 };
 
+// Load environment variables from .env file
 require('dotenv').config();
 
 // --- Main Application Logic ---
 
-console.log('--- Initializing File Browser and Git Sync Process ---');
+// This single message will appear in your console to confirm the script has started.
+process.stdout.write('--- Initializing... All subsequent output will be written to .gitlog ---\n');
 
 // --- Part 1: Start the File Browser Server ---
 
-// --- FIX: Define the full path to the filebrowser executable ---
 const filebrowserExecutable = path.join(__dirname, 'filebrowser');
-
 const filebrowserArgs = ['-a', '0.0.0.0', '-p', '8080', '-r', projectPath];
 
 console.log(`Starting File Browser on 0.0.0.0:8080 for directory ${projectPath}`);
-// --- FIX: Use the full path in the spawn command ---
 const filebrowser = spawn(filebrowserExecutable, filebrowserArgs);
 
-// --- FIX: Add a specific error handler for the spawn process itself ---
-// This will catch the 'ENOENT' error and prevent the script from crashing.
+// Add a specific error handler for the spawn process itself
 filebrowser.on('error', (err) => {
   console.error(`Failed to start File Browser process: ${err.message}`);
-  console.error('Please ensure the "filebrowser" executable is in the same directory as this script and has execute permissions (chmod +x filebrowser).');
+  console.error('Ensure "filebrowser" is in the script directory and has execute permissions (chmod +x filebrowser).');
 });
 
+// Capture stdout from the filebrowser process and log it
 filebrowser.stdout.on('data', (data) => {
   console.log(`[FileBrowser] ${data.toString().trim()}`);
 });
 
+// Capture stderr from the filebrowser process and log it as an error
 filebrowser.stderr.on('data', (data) => {
   console.error(`[FileBrowser] ${data.toString().trim()}`);
 });
 
+// Log if the filebrowser process closes unexpectedly
 filebrowser.on('close', (code) => {
   console.error(`File Browser process exited with code ${code}`);
 });
 
-// --- Part 2: Pull and Push to GitHub Periodically (No changes below this line) ---
+// --- Part 2: Pull and Push to GitHub Periodically ---
 setInterval(() => {
   console.log('--- Running Git Sync ---');
 
@@ -141,4 +144,4 @@ setInterval(() => {
   }
 
   console.log('--- Git Sync Successful ---');
-}, 5000);
+}, 5000); // Sync interval set to 5 seconds

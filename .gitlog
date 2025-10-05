@@ -17,3 +17,9 @@
 [2025-10-05T08:30:52.941Z] ERROR: [FileBrowser] 2025/10/05 08:30:52 No config file used
 [2025-10-05T08:30:52.942Z] [FileBrowser] 2025/10/05 08:30:52 Listening on [::]:8080
 [2025-10-05T08:30:57.928Z] --- Running Git Sync ---
+[2025-10-05T08:34:46.941Z] [dotenv@17.2.3] injecting env (2) from .env [2m-- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops[0m
+[2025-10-05T08:34:46.942Z] Starting File Browser on 0.0.0.0:8080 for directory /workspaces/ToppersToolkitE-Materials
+[2025-10-05T08:34:46.965Z] ERROR: [FileBrowser] 2025/10/05 08:34:46 Using database: /workspaces/ToppersToolkitE-Materials/filebrowser.db
+[2025-10-05T08:34:46.966Z] ERROR: [FileBrowser] 2025/10/05 08:34:46 No config file used
+[2025-10-05T08:34:46.967Z] [FileBrowser] 2025/10/05 08:34:46 Listening on [::]:8080
+[2025-10-05T08:34:51.951Z] --- Running Git Sync ---
