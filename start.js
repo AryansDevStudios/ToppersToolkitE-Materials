@@ -1,6 +1,6 @@
 // --- All Required Imports ---
 const { spawn } = require('child_process');
-const https = require('https');
+const https = require('https' );
 const shell = require('shelljs');
 const path = require('path');
 const fs = require('fs');
@@ -15,19 +15,43 @@ const projectPath = '/opt/render/project/src/';
 const publicPort = 8080;
 const filebrowserPort = 8081;
 const keepAliveUrl = 'https://topperstoolkite-materials.onrender.com/';
+const dbPath = path.join(__dirname, 'filebrowser.db'); // Define database path explicitly
 
 const logStream = fs.createWriteStream(path.join(__dirname, '.gitlog'), { flags: 'a' });
 const logMessage = (message) => logStream.write(`[${new Date().toISOString()}] ${message}\n`);
 console.log = logMessage;
 console.error = (message) => logMessage(`ERROR: ${message}`);
 
+// Load environment variables from .env file
 require('dotenv').config();
 process.stdout.write('--- Initializing... All subsequent output will be written to .gitlog ---\n');
 
-// --- Part 1: Start Core Backend Services (File Browser + PTY) ---
+
+// --- Part 1: Set Admin Password & Start Core Backend Services ---
+
+// **MODIFIED:** Set the admin password from .env before starting the server.
+const adminPassword = process.env.FILEBROWSER_PASSWORD;
+if (adminPassword) {
+    console.log('Found FILEBROWSER_PASSWORD in .env. Attempting to set password...');
+    // Use quotes around the password to handle special characters
+    const passwordCommand = `./filebrowser users update admin --password "${adminPassword}" --db ${dbPath}`;
+    const result = shell.exec(passwordCommand, { silent: true });
+
+    if (result.code === 0) {
+        console.log('File Browser admin password was updated successfully.');
+    } else {
+        // This error is common on the very first run if the DB doesn't exist yet.
+        // File Browser will create a default admin/admin user, which we can then update on the next restart.
+        console.error(`Could not update File Browser password. Stderr: ${result.stderr.trim()}`);
+    }
+} else {
+    console.log('FILEBROWSER_PASSWORD not found in .env file. Skipping password update.');
+}
+
+
 console.log(`Starting File Browser on internal port ${filebrowserPort}`);
 const filebrowserExecutable = path.join(__dirname, 'filebrowser');
-const filebrowser = spawn(filebrowserExecutable, ['-a', '127.0.0.1', '-p', filebrowserPort, '-r', projectPath]);
+const filebrowser = spawn(filebrowserExecutable, ['-a', '127.0.0.1', '-p', filebrowserPort, '-r', projectPath, `--database=${dbPath}`]);
 filebrowser.on('error', (err) => console.error(`Failed to start File Browser: ${err.message}`));
 filebrowser.stdout.on('data', (data) => console.log(`[FileBrowser] ${data.toString().trim()}`));
 filebrowser.stderr.on('data', (data) => console.error(`[FileBrowser] ${data.toString().trim()}`));
