@@ -5,8 +5,8 @@
     <title>Web Terminal (SSE, no WebSocket)</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <!-- Local xterm.js CSS -->
-    <link rel="stylesheet" href="/xterm.css" />
+    <!-- Local xterm.js CSS - EDITED PATH -->
+    <link rel="stylesheet" href="/terminal/xterm.css" />
 
     <style>
       html, body {
@@ -39,9 +39,9 @@
       <button id="clear">Clear</button>
     </div>
 
-    <!-- Local xterm.js -->
-    <script src="/xterm.js"></script>
-    <!-- xterm fit addon from CDN (can also serve locally if needed) -->
+    <!-- Local xterm.js - EDITED PATH -->
+    <script src="/terminal/xterm.js"></script>
+    <!-- xterm fit addon from CDN (no change needed) -->
     <script src="https://unpkg.com/xterm-addon-fit@0.7.0/lib/xterm-addon-fit.js"></script>
 
     <script>
@@ -58,9 +58,10 @@
       // Notify server of current size
       function notifyResize() {
         const dims = { cols: term.cols, rows: term.rows };
+        const resizeUrl = "/terminal/resize"; // EDITED PATH
         navigator.sendBeacon ?
-          navigator.sendBeacon("/resize", JSON.stringify(dims)) :
-          fetch("/resize", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(dims) });
+          navigator.sendBeacon(resizeUrl, JSON.stringify(dims)) :
+          fetch(resizeUrl, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(dims) });
       }
 
       // Initial resize notification
@@ -72,8 +73,8 @@
         notifyResize();
       });
 
-      // SSE for terminal output
-      const es = new EventSource("/events");
+      // SSE for terminal output - EDITED PATH
+      const es = new EventSource("/terminal/events");
       es.onmessage = (ev) => {
         try {
           const text = JSON.parse(ev.data);
@@ -100,7 +101,8 @@
           sendTimer = null;
           if (!payload) return;
           try {
-            await fetch("/input", {
+            // EDITED PATH
+            await fetch("/terminal/input", {
               method: "POST",
               headers: { "Content-Type": "text/plain; charset=utf-8" },
               body: payload
