@@ -1,0 +1,123 @@
+[2025-10-05T08:16:51.514Z] [dotenv@17.2.3] injecting env (2) from .env [2m-- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit[0m
+[2025-10-05T08:16:51.515Z] --- Initializing Server and Git Sync Process ---
+[2025-10-05T08:16:51.522Z] Server listening at http://0.0.0.0:8080
+[2025-10-05T08:16:51.522Z] Serving files from /workspaces/
+[2025-10-05T08:16:56.518Z] --- Running Git Sync ---
+[2025-10-05T08:16:56.523Z] Ensuring we are on the main branch...
+[2025-10-05T08:16:56.561Z] Error: Could not check out main branch.
+[2025-10-05T08:16:56.561Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:01.519Z] --- Running Git Sync ---
+[2025-10-05T08:17:01.520Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:01.556Z] Error: Could not check out main branch.
+[2025-10-05T08:17:01.556Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:06.522Z] --- Running Git Sync ---
+[2025-10-05T08:17:06.523Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:06.559Z] Error: Could not check out main branch.
+[2025-10-05T08:17:06.559Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:11.526Z] --- Running Git Sync ---
+[2025-10-05T08:17:11.527Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:11.564Z] Error: Could not check out main branch.
+[2025-10-05T08:17:11.564Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:16.527Z] --- Running Git Sync ---
+[2025-10-05T08:17:16.528Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:16.565Z] Error: Could not check out main branch.
+[2025-10-05T08:17:16.565Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:21.528Z] --- Running Git Sync ---
+[2025-10-05T08:17:21.528Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:21.565Z] Error: Could not check out main branch.
+[2025-10-05T08:17:21.566Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:26.533Z] --- Running Git Sync ---
+[2025-10-05T08:17:26.534Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:26.571Z] Error: Could not check out main branch.
+[2025-10-05T08:17:26.571Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:31.538Z] --- Running Git Sync ---
+[2025-10-05T08:17:31.539Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:31.575Z] Error: Could not check out main branch.
+[2025-10-05T08:17:31.575Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:36.543Z] --- Running Git Sync ---
+[2025-10-05T08:17:36.545Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:36.582Z] Error: Could not check out main branch.
+[2025-10-05T08:17:36.582Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:41.549Z] --- Running Git Sync ---
+[2025-10-05T08:17:41.550Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:41.588Z] Error: Could not check out main branch.
+[2025-10-05T08:17:41.588Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:46.551Z] --- Running Git Sync ---
+[2025-10-05T08:17:46.551Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:46.587Z] Error: Could not check out main branch.
+[2025-10-05T08:17:46.587Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:51.552Z] --- Running Git Sync ---
+[2025-10-05T08:17:51.552Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:51.588Z] Error: Could not check out main branch.
+[2025-10-05T08:17:51.588Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:17:56.552Z] --- Running Git Sync ---
+[2025-10-05T08:17:56.553Z] Ensuring we are on the main branch...
+[2025-10-05T08:17:56.590Z] Error: Could not check out main branch.
+[2025-10-05T08:17:56.590Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:18:01.557Z] --- Running Git Sync ---
+[2025-10-05T08:18:01.558Z] Ensuring we are on the main branch...
+[2025-10-05T08:18:01.623Z] Error: Could not check out main branch.
+[2025-10-05T08:18:01.623Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:18:06.563Z] --- Running Git Sync ---
+[2025-10-05T08:18:06.563Z] Ensuring we are on the main branch...
+[2025-10-05T08:18:06.602Z] Error: Could not check out main branch.
+[2025-10-05T08:18:06.602Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:18:11.568Z] --- Running Git Sync ---
+[2025-10-05T08:18:11.569Z] Ensuring we are on the main branch...
+[2025-10-05T08:18:11.605Z] Error: Could not check out main branch.
+[2025-10-05T08:18:11.605Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:18:16.573Z] --- Running Git Sync ---
+[2025-10-05T08:18:16.574Z] Ensuring we are on the main branch...
+[2025-10-05T08:18:16.624Z] Error: Could not check out main branch.
+[2025-10-05T08:18:16.624Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:18:21.574Z] --- Running Git Sync ---
+[2025-10-05T08:18:21.574Z] Ensuring we are on the main branch...
+[2025-10-05T08:18:21.622Z] Error: Could not check out main branch.
+[2025-10-05T08:18:21.622Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:18:26.578Z] --- Running Git Sync ---
+[2025-10-05T08:18:26.579Z] Ensuring we are on the main branch...
+[2025-10-05T08:18:26.615Z] Error: Could not check out main branch.
+[2025-10-05T08:18:26.615Z] - STDERR: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-10-05T08:19:00.436Z] [dotenv@17.2.3] injecting env (2) from .env [2m-- tip: ⚙️  suppress all logs with { quiet: true }[0m
+[2025-10-05T08:19:00.437Z] --- Initializing Server and Git Sync Process ---
+[2025-10-05T08:19:00.444Z] Server listening at http://0.0.0.0:8080
+[2025-10-05T08:19:00.444Z] Serving files from /workspaces/ToppersToolkitE-Materials
+[2025-10-05T08:19:05.441Z] --- Running Git Sync ---

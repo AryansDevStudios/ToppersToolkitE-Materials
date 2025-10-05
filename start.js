@@ -1,14 +1,33 @@
 const express = require('express');
 const shell = require('shelljs');
 const path = require('path');
+const fs = require('fs');
 
-// --- Part 0: Load Environment Variables ---
-// This will load the variables from your .env file into process.env
+// --- Part 0: Setup Logging and Environment Variables ---
+
+// Create a write stream for the log file. The 'a' flag means we will append to the file.
+const logStream = fs.createWriteStream(path.join(__dirname, '.gitlog'), { flags: 'a' });
+
+// Override the default console.log to write to our file instead
+console.log = function(message) {
+  const timestamp = new Date().toISOString();
+  // Write the timestamped message to the log file, followed by a newline
+  logStream.write(`[${timestamp}] ${message}\n`);
+};
+
+// Also redirect any potential errors to the same log file
+console.error = console.log;
+
+// Load environment variables from .env file
 require('dotenv').config();
+
+// --- Main Application Logic ---
 
 const app = express();
 const port = 8080;
-const servePath = '/opt/render/project/src';
+const servePath = '/workspaces/ToppersToolkitE-Materials';
+
+console.log('--- Initializing Server and Git Sync Process ---');
 
 // --- Part 1: Serve Static Files ---
 app.use(express.static(servePath));
@@ -22,66 +41,84 @@ app.listen(port, '0.0.0.0', () => {
 setInterval(() => {
   console.log('--- Running Git Sync ---');
 
-  // Retrieve credentials from environment variables
   const username = process.env.GITHUB_USERNAME;
   const pat = process.env.GITHUB_PAT;
 
-  // Validate that the environment variables are loaded
   if (!username || !pat) {
     console.log('Error: GitHub username or PAT not found in .env file.');
     return;
   }
 
-  // Construct the secure remote URL
   const remoteUrl = `https://${username}:${pat}@github.com/AryansDevStudios/ToppersToolkitE-Materials.git`;
 
-  // Change to the project directory.
   if (shell.cd(servePath).code !== 0) {
     console.log('Error: Could not change to project directory');
     return;
   }
 
-  // Stash any uncommitted changes
-  console.log('Stashing local changes...');
-  if (shell.exec('git stash').code !== 0) {
-    console.log('Error: Git stash failed');
+  console.log('Ensuring we are on the main branch...');
+  const checkoutResult = shell.exec('git checkout main', { silent: true });
+  if (checkoutResult.code !== 0) {
+    console.log('Error: Could not check out main branch.');
+    console.log(`- STDERR: ${checkoutResult.stderr}`);
     return;
   }
 
-  // Pull the latest changes from the remote repository with rebase
+  let stashedChanges = false;
+  if (shell.exec('git status --porcelain', { silent: true }).stdout !== '') {
+    console.log('Stashing local changes...');
+    shell.exec('git stash', { silent: true });
+    stashedChanges = true;
+  }
+
   console.log('Pulling latest changes...');
-  if (shell.exec('git pull --rebase').code !== 0) {
+  const pullResult = shell.exec('git pull --rebase', { silent: true });
+  if (pullResult.code !== 0) {
     console.log('Error: Git pull failed. This could be due to a merge conflict.');
-    shell.exec('git rebase --abort');
-    shell.exec('git stash pop');
+    console.log(`- STDERR: ${pullResult.stderr}`);
+    shell.exec('git rebase --abort', { silent: true });
+    if (stashedChanges) {
+      shell.exec('git stash pop', { silent: true });
+    }
     return;
   }
 
-  // Apply the stashed changes
-  console.log('Applying stashed changes...');
-  if (shell.exec('git stash pop').code !== 0) {
-    console.log('Info: No stashed changes to apply.');
+  if (stashedChanges) {
+    console.log('Applying stashed changes...');
+    const stashPopResult = shell.exec('git stash pop', { silent: true });
+    if (stashPopResult.code !== 0) {
+       console.log('Warning: Git stash pop failed, likely due to conflicts.');
+       console.log(`- STDERR: ${stashPopResult.stderr}`);
+    }
   }
 
-  // Add all files to the staging area.
-  if (shell.exec('git add .').code !== 0) {
-    console.log('Error: Git add failed');
+  const addResult = shell.exec('git add .', { silent: true });
+  if (addResult.code !== 0) {
+    console.log('Error: Git add failed.');
+    console.log(`- STDERR: ${addResult.stderr}`);
     return;
   }
 
-  // Commit the changes with a timestamp.
   const commitMessage = `Automated commit on ${new Date().toISOString()}`;
-  const commitResult = shell.exec(`git commit -m "${commitMessage}"`);
+  const commitResult = shell.exec(`git commit -m "${commitMessage}"`, { silent: true });
   if (commitResult.code !== 0 && !commitResult.stdout.includes('nothing to commit')) {
     console.log('Error: Git commit failed.');
+    console.log(`- STDERR: ${commitResult.stderr}`);
     return;
   }
 
-  // Push the changes to the remote repository using the secure URL.
-  if (shell.exec(`git push ${remoteUrl} HEAD:main`).code !== 0) {
-    console.log('Error: Git push failed');
-    return;
+  // Only attempt to push if there was something to commit
+  if (commitResult.code === 0) {
+    console.log('Pushing changes to remote...');
+    const pushResult = shell.exec(`git push ${remoteUrl} HEAD:main`, { silent: true });
+    if (pushResult.code !== 0) {
+      console.log('Error: Git push failed');
+      console.log(`- STDERR: ${pushResult.stderr}`);
+      return;
+    }
+  } else {
+    console.log('No new changes to commit or push.');
   }
 
   console.log('--- Git Sync Successful ---');
-}, 1000); // The interval is set to 1000 milliseconds (1 second).
+}, 5000);
