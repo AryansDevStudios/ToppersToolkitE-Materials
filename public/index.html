@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Terminal (SSE, no WebSocket)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Local xterm.js CSS -->
+    <link rel="stylesheet" href="/xterm.css" />
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        background: #1e1e1e;
+        display: flex;
+        flex-direction: column;
+      }
+      #terminal {
+        flex: 1;
+      }
+      .toolbar {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 10;
+        color: #fff;
+        font-family: sans-serif;
+      }
+      button {
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="terminal"></div>
+    <div class="toolbar">
+      <button id="clear">Clear</button>
+    </div>
+
+    <!-- Local xterm.js -->
+    <script src="/xterm.js"></script>
+    <!-- xterm fit addon from CDN (can also serve locally if needed) -->
+    <script src="https://unpkg.com/xterm-addon-fit@0.7.0/lib/xterm-addon-fit.js"></script>
+
+    <script>
+      const term = new Terminal({
+        cursorBlink: true,
+        convertEol: true
+      });
+
+      const fitAddon = new FitAddon.FitAddon();
+      term.loadAddon(fitAddon);
+      term.open(document.getElementById("terminal"));
+      fitAddon.fit();
+
+      // Notify server of current size
+      function notifyResize() {
+        const dims = { cols: term.cols, rows: term.rows };
+        navigator.sendBeacon ?
+          navigator.sendBeacon("/resize", JSON.stringify(dims)) :
+          fetch("/resize", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(dims) });
+      }
+
+      // Initial resize notification
+      notifyResize();
+
+      // Resize terminal on window resize
+      window.addEventListener("resize", () => {
+        fitAddon.fit();
+        notifyResize();
+      });
+
+      // SSE for terminal output
+      const es = new EventSource("/events");
+      es.onmessage = (ev) => {
+        try {
+          const text = JSON.parse(ev.data);
+          term.write(text);
+        } catch {
+          term.write(ev.data);
+        }
+      };
+      es.onerror = () => {
+        term.write("\r\n*** Connection to server lost. Reload to reconnect. ***\r\n");
+        es.close();
+      };
+
+      // Send user input
+      let inputBuffer = "";
+      let sendTimer = null;
+      const SEND_INTERVAL = 40; // ms
+
+      function scheduleSend() {
+        if (sendTimer) return;
+        sendTimer = setTimeout(async () => {
+          const payload = inputBuffer;
+          inputBuffer = "";
+          sendTimer = null;
+          if (!payload) return;
+          try {
+            await fetch("/input", {
+              method: "POST",
+              headers: { "Content-Type": "text/plain; charset=utf-8" },
+              body: payload
+            });
+          } catch {}
+        }, SEND_INTERVAL);
+      }
+
+      term.onData((data) => {
+        inputBuffer += data;
+        scheduleSend();
+      });
+
+      // Clear button
+      document.getElementById("clear").addEventListener("click", () => term.clear());
+    </script>
+  </body>
+</html>
