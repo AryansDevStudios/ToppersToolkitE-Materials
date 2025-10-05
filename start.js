@@ -1,40 +1,51 @@
+const express = require('express');
 const shell = require('shelljs');
 const path = require('path');
 const fs = require('fs');
 
 // --- Part 0: Setup Logging and Environment Variables ---
 
+// The path to your project directory for both serving and syncing.
+const projectPath = '/workspaces/ToppersToolkitE-Materials';
+
 // Create a write stream for the log file. The 'a' flag means we will append to the file.
 const logStream = fs.createWriteStream(path.join(__dirname, '.gitlog'), { flags: 'a' });
 
-// Override the default console.log to write to our file instead
+// Override console.log to write to the file and the actual console
 console.log = function(message) {
   const timestamp = new Date().toISOString();
-  // Write the timestamped message to the log file, followed by a newline
-  logStream.write(`[${timestamp}] ${message}\n`);
-  // Also write to the actual console so you can see output if you're watching it directly
-  process.stdout.write(`[${timestamp}] ${message}\n`);
+  const logMessage = `[${timestamp}] ${message}\n`;
+  logStream.write(logMessage);
+  process.stdout.write(logMessage); // Also write to the actual console
 };
 
-// Also redirect any potential errors to the same log file and the console
+// Override console.error to write to the file and the actual console
 console.error = function(message) {
-    const timestamp = new Date().toISOString();
-    logStream.write(`[${timestamp}] ERROR: ${message}\n`);
-    process.stderr.write(`[${timestamp}] ERROR: ${message}\n`);
+  const timestamp = new Date().toISOString();
+  const errorMessage = `[${timestamp}] ERROR: ${message}\n`;
+  logStream.write(errorMessage);
+  process.stderr.write(errorMessage); // Also write to the actual error console
 };
-
 
 // Load environment variables from .env file
 require('dotenv').config();
 
 // --- Main Application Logic ---
 
-const syncPath = '/workspaces/ToppersToolkitE-Materials'; // The directory to sync
+const app = express();
+const port = 8080;
 
-console.log('--- Initializing Git Sync Process ---');
-console.log(`Target directory: ${syncPath}`);
+console.log('--- Initializing Server and Git Sync Process ---');
 
-// --- Part 1: Pull and Push to GitHub Periodically ---
+// --- Part 1: Serve Static Files ---
+app.use(express.static(projectPath));
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening at http://0.0.0.0:${port}`);
+  console.log(`Serving files from ${projectPath}`);
+});
+
+// --- Part 2: Pull and Push to GitHub Periodically ---
 setInterval(() => {
   console.log('--- Running Git Sync ---');
 
@@ -48,8 +59,8 @@ setInterval(() => {
 
   const remoteUrl = `https://${username}:${pat}@github.com/AryansDevStudios/ToppersToolkitE-Materials.git`;
 
-  if (shell.cd(syncPath).code !== 0) {
-    console.error(`Could not change to directory: ${syncPath}`);
+  if (shell.cd(projectPath).code !== 0) {
+    console.error(`Could not change to directory: ${projectPath}`);
     return;
   }
 

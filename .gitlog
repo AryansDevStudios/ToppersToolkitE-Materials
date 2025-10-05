@@ -1,0 +1,5 @@
+[2025-10-05T08:23:58.421Z] [dotenv@17.2.3] injecting env (2) from .env [2m-- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit[0m
+[2025-10-05T08:23:58.422Z] --- Initializing Server and Git Sync Process ---
+[2025-10-05T08:23:58.431Z] Server listening at http://0.0.0.0:8080
+[2025-10-05T08:23:58.431Z] Serving files from /workspaces/ToppersToolkitE-Materials
+[2025-10-05T08:24:03.425Z] --- Running Git Sync ---
