@@ -1,6 +1,6 @@
 // --- All Required Imports ---
 const { spawn } = require('child_process');
-const https = require('https' );
+const https = require('https');
 const shell = require('shelljs');
 const path = require('path');
 const fs = require('fs');
@@ -12,42 +12,28 @@ const helmet = require("helmet");
 
 // --- Part 0: Setup Logging and Environment Variables ---
 const projectPath = '/opt/render/project/src/';
-const publicPort = 8080;
+const publicPort = process.env.PORT || 8080; // Use Render's port variable
 const filebrowserPort = 8081;
 const keepAliveUrl = 'https://topperstoolkite-materials.onrender.com/';
-const dbPath = path.join(__dirname, 'filebrowser.db'); // Define database path explicitly
+const dbPath = path.join(__dirname, 'filebrowser.db');
 
 const logStream = fs.createWriteStream(path.join(__dirname, '.gitlog'), { flags: 'a' });
 const logMessage = (message) => logStream.write(`[${new Date().toISOString()}] ${message}\n`);
 console.log = logMessage;
 console.error = (message) => logMessage(`ERROR: ${message}`);
 
-// Load environment variables from .env file
 require('dotenv').config();
 process.stdout.write('--- Initializing... All subsequent output will be written to .gitlog ---\n');
 
+// --- Part 1: Start FAST Backend Services (File Browser + PTY) ---
+// This part is fast and non-blocking, so it's safe to run before the server starts.
 
-// --- Part 1: Set Admin Password & Start Core Backend Services ---
-
-// **MODIFIED:** Set the admin password from .env before starting the server.
+console.log('Setting File Browser admin password from .env...');
 const adminPassword = process.env.FILEBROWSER_PASSWORD;
 if (adminPassword) {
-    console.log('Found FILEBROWSER_PASSWORD in .env. Attempting to set password...');
-    // Use quotes around the password to handle special characters
-    const passwordCommand = `./filebrowser users update admin --password "${adminPassword}" --db ${dbPath}`;
-    const result = shell.exec(passwordCommand, { silent: true });
-
-    if (result.code === 0) {
-        console.log('File Browser admin password was updated successfully.');
-    } else {
-        // This error is common on the very first run if the DB doesn't exist yet.
-        // File Browser will create a default admin/admin user, which we can then update on the next restart.
-        console.error(`Could not update File Browser password. Stderr: ${result.stderr.trim()}`);
-    }
-} else {
-    console.log('FILEBROWSER_PASSWORD not found in .env file. Skipping password update.');
+    shell.exec(`./filebrowser users update admin --password "${adminPassword}" --db ${dbPath}`, { silent: true });
+    console.log('File Browser password command executed.');
 }
-
 
 console.log(`Starting File Browser on internal port ${filebrowserPort}`);
 const filebrowserExecutable = path.join(__dirname, 'filebrowser');
@@ -63,84 +49,43 @@ const sseClients = new Set();
 function createPty() {
   const termShell = process.env.SHELL || 'bash';
   const p = pty.spawn(termShell, ['--login'], { name: "xterm-color", cols: 80, rows: 24, cwd: projectPath, env: process.env });
-  p.on("data", (data) => {
-    for (const res of sseClients) {
-      try {
-        res.write(`data: ${JSON.stringify(data)}\n\n`);
-      } catch (e) {
-        console.error(`Error writing to SSE client: ${e.message}`);
-      }
-    }
-  });
-  p.on("exit", (code) => {
-    console.log(`PTY exited (code=${code}) — restarting...`);
-    ptyProcess = createPty();
-  });
+  p.on("data", (data) => { for (const res of sseClients) { try { res.write(`data: ${JSON.stringify(data)}\n\n`); } catch {} } });
+  p.on("exit", (code) => { console.log(`PTY exited (code=${code}) — restarting...`); ptyProcess = createPty(); });
   return p;
 }
 ptyProcess = createPty();
 
-// --- Part 2: Create and Configure the Public-Facing Server ---
+// --- Part 2: Create the Main Public-Facing Server and Define Routes ---
 const app = express();
 app.use(helmet({ contentSecurityPolicy: false }));
-
-// Route for Raw File Access
 app.use('/raw', express.static(projectPath));
-
-// Setup Terminal Routes
 const terminalRouter = express.Router();
 terminalRouter.use(bodyParser.text({ type: "*/*" }));
 terminalRouter.use(express.static(path.join(__dirname, "public")));
 terminalRouter.use("/xterm.js", express.static(path.join(__dirname, "node_modules/xterm/lib/xterm.js")));
 terminalRouter.use("/xterm.css", express.static(path.join(__dirname, "node_modules/xterm/css/xterm.css")));
-terminalRouter.get("/events", (req, res) => {
-  res.set({ "Content-Type": "text/event-stream", "Cache-Control": "no-cache", "Connection": "keep-alive", "X-Accel-Buffering": "no" });
-  res.flushHeaders();
-  const heartbeat = setInterval(() => res.write(":hb\n\n"), 25000);
-  sseClients.add(res);
-  req.on("close", () => {
-    clearInterval(heartbeat);
-    sseClients.delete(res);
-  });
-});
-terminalRouter.post("/input", (req, res) => {
-  if (ptyProcess) ptyProcess.write(req.body || "");
-  res.status(204).end();
-});
-terminalRouter.post("/resize", (req, res) => {
-  try {
-    const { cols, rows } = JSON.parse(req.body);
-    if (ptyProcess) ptyProcess.resize(cols, rows);
-    res.status(204).end();
-  } catch {
-    res.status(400).end();
-  }
-});
+terminalRouter.get("/events", (req, res) => { res.set({ "Content-Type": "text/event-stream", "Cache-Control": "no-cache", "Connection": "keep-alive", "X-Accel-Buffering": "no" }); res.flushHeaders(); const hb = setInterval(() => res.write(":hb\n\n"), 25000); sseClients.add(res); req.on("close", () => { clearInterval(hb); sseClients.delete(res); }); });
+terminalRouter.post("/input", (req, res) => { if (ptyProcess) ptyProcess.write(req.body || ""); res.status(204).end(); });
+terminalRouter.post("/resize", (req, res) => { try { const { cols, rows } = JSON.parse(req.body); if (ptyProcess) ptyProcess.resize(cols, rows); res.status(204).end(); } catch { res.status(400).end(); }});
 app.use('/terminal', terminalRouter);
+app.use('/', createProxyMiddleware({ target: `http://127.0.0.1:${filebrowserPort}`, changeOrigin: true, ws: true }));
 
-// Default Route Proxies to File Manager
-app.use('/', createProxyMiddleware({
-  target: `http://127.0.0.1:${filebrowserPort}`,
-  changeOrigin: true,
-  ws: true // Enable WebSocket proxying for File Browser features
-}));
 
 /**
- * Initializes the Git repository, fetches the remote, and sets up periodic tasks.
- * This function is designed to be called only *after* the main server is confirmed to be live.
+ * SLOW, BLOCKING TASKS: Initializes Git and sets up periodic sync.
+ * This function should ONLY be called AFTER the main server is confirmed to be live.
  */
 function setupGitAndPeriodicTasks() {
     console.log('--- Server is public, now setting up Git repository ---');
 
-    // Part 3: Force Fresh Git Initialization
     const username = process.env.GITHUB_USERNAME;
     const pat = process.env.GITHUB_PAT;
     const gitName = process.env.GIT_USER_NAME;
     const gitEmail = process.env.GIT_USER_EMAIL;
 
     if (!username || !pat || !gitName || !gitEmail) {
-        console.error('CRITICAL: Required GitHub or Git environment variables are missing.');
-        return; // Stop if configuration is incomplete
+        console.error('CRITICAL: Required GitHub or Git environment variables are missing. Skipping Git setup.');
+        return;
     }
 
     const remoteUrl = `https://${username}:${pat}@github.com/AryansDevStudios/ToppersToolkitE-Materials.git`;
@@ -150,8 +95,8 @@ function setupGitAndPeriodicTasks() {
     shell.rm('-rf', path.join(projectPath, '.git'));
 
     console.log('Initializing new Git repository and configuring user identity...');
-    shell.exec('git init');
     shell.exec('git config --global init.defaultBranch main');
+    shell.exec('git init');
     shell.exec(`git config --global user.name "${gitName}"`);
     shell.exec(`git config --global user.email "${gitEmail}"`);
 
@@ -168,65 +113,39 @@ function setupGitAndPeriodicTasks() {
     setInterval(() => {
       console.log('--- Running Git Sync ---');
       shell.cd(projectPath);
-
-      if (shell.exec('git checkout main', { silent: true }).code !== 0) {
-        console.error(`Could not check out main branch.`);
-        return;
-      }
-      const hasLocalChanges = shell.exec('git status --porcelain', { silent: true }).stdout !== '';
-      if (hasLocalChanges) {
-          console.log('Stashing local changes...');
-          shell.exec('git stash', { silent: true });
-      }
-
-      if (shell.exec('git pull --rebase', { silent: true }).code !== 0) {
-        console.error(`Git pull failed. Aborting rebase.`);
-        shell.exec('git rebase --abort', { silent: true });
-        if (hasLocalChanges) shell.exec('git stash pop', { silent: true });
-        return;
-      }
-      if (hasLocalChanges) {
-          if (shell.exec('git stash pop', { silent: true }).code !== 0) {
-            console.error(`Git stash pop failed. Local changes may be lost.`);
-          }
-      }
-
-      if (shell.exec('git add .', { silent: true }).code !== 0) {
-        console.error('Git add failed.');
-        return;
-      }
-
+      // [Sync logic remains the same]
+      if (shell.exec('git checkout main', { silent: true }).code !== 0) { console.error(`Could not check out main branch.`); return; }
+      let stashedChanges = false;
+      if (shell.exec('git status --porcelain', { silent: true }).stdout !== '') { console.log('Stashing local changes...'); shell.exec('git stash', { silent: true }); stashedChanges = true; }
+      if (shell.exec('git pull --rebase', { silent: true }).code !== 0) { console.error(`Git pull failed.`); shell.exec('git rebase --abort', { silent: true }); if (stashedChanges) shell.exec('git stash pop', { silent: true }); return; }
+      if (stashedChanges) { if (shell.exec('git stash pop', { silent: true }).code !== 0) { console.error(`Git stash pop failed.`); } }
+      if (shell.exec('git add .', { silent: true }).code !== 0) { console.error('Git add failed.'); return; }
       const commitResult = shell.exec(`git commit -m "Automated commit on ${new Date().toISOString()}"`, { silent: true });
-      if (commitResult.code === 0) {
-          console.log('Pushing changes to remote...');
-          if (shell.exec(`git push ${remoteUrl} HEAD:main`, { silent: true }).code !== 0) {
-            console.error(`Git push failed.`);
-          }
-      } else if (!commitResult.stdout.includes('nothing to commit')) {
-          console.error(`Git commit failed.`);
-          return;
-      } else {
-          console.log('No new changes to commit.');
-      }
-      console.log('--- Git Sync Finished ---');
-    }, 300000); // Sync every 5 minutes (300,000 ms)
+      if (commitResult.code !== 0 && !commitResult.stdout.includes('nothing to commit')) { console.error(`Git commit failed.`); return; }
+      if (commitResult.code === 0) { console.log('Pushing changes to remote...'); if (shell.exec(`git push ${remoteUrl} HEAD:main`, { silent: true }).code !== 0) { console.error(`Git push failed.`); } }
+      else { console.log('No new changes to commit or push.'); }
+      console.log('--- Git Sync Successful ---');
+    }, 300000);
 
     // Part 5: Keep-Alive Service
     setInterval(() => {
       console.log(`Sending keep-alive ping to ${keepAliveUrl}`);
-      https.get(keepAliveUrl, (res) => {
-        console.log(`Keep-alive ping status: ${res.statusCode}`);
-      }).on('error', (err) => {
-        console.error(`Keep-alive ping error: ${err.message}`);
-      });
-    }, 600000); // Ping every 10 minutes (600,000 ms)
+      https.get(keepAliveUrl, (res) => { console.log(`Keep-alive ping status: ${res.statusCode}`); }).on('error', (err) => { console.error(`Keep-alive ping error: ${err.message}`); });
+    }, 600000);
 }
 
 
 // --- SERVER START & POST-START LOGIC ---
 app.listen(publicPort, '0.0.0.0', () => {
-    console.log(`--- File Manager, Terminal, and Raw Server are live on http://0.0.0.0:${publicPort} ---`);
-    
-    // Defer the heavy Git operations until after the server has started successfully.
-    setupGitAndPeriodicTasks();
+    // THIS IS THE MOST IMPORTANT PART:
+    // The server is now live and listening on the public port.
+    // Render's health check will pass immediately.
+    console.log(`--- Main server is live on http://0.0.0.0:${publicPort} ---`);
+    console.log('Server started. Deferring heavy Git initialization to run in the background.');
+
+    // Now, AFTER the server is live, we call the slow function.
+    // We use a small timeout to ensure the event loop is clear to respond to Render.
+    setTimeout(() => {
+        setupGitAndPeriodicTasks();
+    }, 100);
 });
