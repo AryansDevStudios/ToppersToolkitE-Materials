@@ -1,4 +1,4 @@
-cd /opt/render/project/src/ToppersToolkitE-Materials
+cd /opt/render/project/src/
 pwd
 ls
 
